@@ -76,7 +76,7 @@ header {
     transform: translateY(-8px) rotate(-45deg);
   }
   .nav-list {
-    position: fixed;
+    position: absolute;
     left: -120%;
     flex-direction: column;
   }
@@ -113,7 +113,7 @@ main img {
   margin-top: 2em;
 }
 .main-consult button {
-  background-color: #146c94;
+  background-color: orange;
 }
 @media (max-width: 768px) {
   main {

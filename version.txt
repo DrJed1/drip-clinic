@@ -2,3 +2,5 @@
   hover does not work - testing on github
 0.1 draft release
   homepage has been done
+0.11
+  burger menu position to absolute fix
