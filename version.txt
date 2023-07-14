@@ -7,3 +7,5 @@
 0.12
   added alts to pics
   deleted 1 pic(hero)
+0.121
+  changed /img to img in index.html
