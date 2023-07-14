@@ -1,50 +1,395 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
   padding: 0;
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-header{
-  height: 8vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: skyblue;
-  padding:0 1em;
-}
-nav ul{
+  font-family: "Roboto", sans-serif;
   list-style: none;
+  text-decoration: none;
+  color: black;
+}
+/* Хедер */
+header {
+  height: 10vh;
+  background-color: #f6f1f1;
+}
+.nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap:2em;
+  height: 10vh;
+  align-items: center;
 }
-nav ul a{
-  text-decoration: none;
+.nav-logo {
+  font-size: 2rem;
+  padding-left: 0.5em;
 }
-.services{
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+  padding: 1em;
+}
+.services {
   position: relative;
 }
-.dropdown{
-  top:4em;
+.nav-link:hover {
+  color: #146c94;
+}
+.dropdown {
   position: absolute;
   display: none;
+  background-color: whitesmoke;
+  padding: 1.5em;
+  border-radius: 5px;
 }
-.dropdown ul{
-  list-style: none;
+.dropdown li {
+  margin-top: 0.5em;
+}
+.services:hover .dropdown {
+  display: block;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    padding-right: 1em;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-list {
+    position: fixed;
+    left: -120%;
+    flex-direction: column;
+  }
+  .nav-list.active {
+    left: 35%;
+    top: 13%;
+    gap: 0.3em;
+  }
+  header.active {
+    height: 40vh;
+  }
+}
+
+/* Хиро */
+
+main {
+  background-color: #afd3e2;
+  height: 60vh;
+  display: flex;
+}
+main img {
+  scale: 80%;
+}
+.hero-text {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap:0.5em;
-  background-color: whitesmoke;
-  padding:1em;
-  border-radius: 10px;
+  justify-content: center;
+  padding: 5em;
 }
-.services:hover .dropdown{
+.hero-text h2 {
+  margin-top: 2em;
+}
+.main-consult {
+  margin-top: 2em;
+}
+.main-consult button {
+  background-color: #146c94;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-text {
+    padding: 1em;
+    justify-content: flex-start;
+  }
+  .hero-text h2 {
+    margin-top: 1em;
+  }
+}
+
+/* Приемущества */
+
+.benefits {
+  max-width: 70%;
+  margin: auto;
+  height: 40vh;
+}
+.benefits h2 {
+  text-align: center;
+  padding: 1em;
+}
+.benefits-сontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+.benefits-block {
+  width: 15em;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 1px;
+  padding: 0.5em;
+}
+.benefits-block p {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .benefits {
+    height: auto;
+    max-width: 95%;
+  }
+  .benefits-сontainer {
+    flex-direction: column;
+  }
+}
+
+/* О клинике */
+
+.about-clinic {
+  height: 40vh;
+  max-width: 70%;
+  margin: auto;
   display: flex;
 }
-#check, .hamburger{
-  display: none;
+.clinic-description h2 {
+  margin-bottom: 1em;
+}
+.clinic-img {
+  width: 75em;
+}
+.clinic-img img {
+  object-fit: contain;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .about-clinic {
+    height: auto;
+    flex-direction: column;
+    max-width: 95%;
+  }
+  .clinic-img {
+    margin-top: 1em;
+    width: auto;
+  }
+}
+/* Наши услуги */
+
+.our-services {
+  height: 60vh;
+  max-width: 70%;
+  margin: auto;
+}
+.our-services h2 {
+  text-align: center;
+  padding: 1em;
+}
+.our-services-row {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.our-services-block {
+  width: 15em;
+  height: 10em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.our-services-block p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .our-services {
+    height: auto;
+    max-width: 95%;
+  }
+  .our-services-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+/* Выезд нашего врача к вам домой */
+
+.home-doctor {
+  height: 50vh;
+  max-width: 70%;
+  margin: auto;
+}
+.home-doctor h2 {
+  padding: 1em;
+}
+.home-doctor-container {
+  display: flex;
+}
+.home-doctor-img {
+  width: 130em;
+  margin-right: 2em;
+}
+.home-doctor-img img {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 1em;
+}
+@media (max-width: 768px) {
+  .home-doctor {
+    height: auto;
+    max-width: 95%;
+  }
+  .home-doctor-container {
+    flex-direction: column;
+  }
+  .home-doctor-img {
+    width: auto;
+  }
+  .home-doctor-img img {
+    width: 10em;
+  }
+}
+
+/* Наши спецалисты */
+
+.doctors {
+  max-width: 70%;
+  margin: auto;
+}
+.doctors h2 {
+  text-align: center;
+  padding: 1em;
+}
+.doctors-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.doctor-block {
+}
+.doctor-block img {
+  object-fit: fill;
+  width: 13em;
+  height: 20em;
+}
+@media (max-width: 768px) {
+  .doctors{
+    height: auto;
+    max-width: 95%;
+  }
+  .doctors-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Отзывы */
+
+.reviews {
+  height: 30vh;
+  max-width: 70%;
+  margin: auto;
+}
+.reviews h2 {
+  padding: 1em;
+  text-align: center;
+}
+.reviews-container {
+  display: flex;
+  gap: 1em;
+}
+.reviews-block {
+  font-size: 14px;
+  border: 1px solid grey;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .reviews {
+    max-width: 95%;
+    height: auto;
+  }
+  .reviews-container {
+    flex-direction: column;
+  }
+}
+
+/* Контакты */
+.contacts {
+  height: 70vh;
+  max-width: 70%;
+  margin: auto;
+}
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-numbers {
+  line-height: 2em;
+}
+.contacts-numbers h2 {
+  text-align: center;
+  padding: 1em;
+}
+@media (max-width: 768px) {
+  .contacts {
+    height: auto;
+    max-width: 95%;
+  }
+  .contacts-container {
+    flex-direction: column;
+  }
+  .contacts-map iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Футер */
+.footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #afd3e2;
+  align-items: center;
+}
+.footer-services ul li {
+  margin-bottom: 0.3em;
+}
+.year {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    flex-wrap: wrap;
+  }
 }

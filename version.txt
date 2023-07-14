@@ -1,2 +1,4 @@
 0.01
-hover does not work - testing on github
+  hover does not work - testing on github
+0.1 draft release
+  homepage has been done
