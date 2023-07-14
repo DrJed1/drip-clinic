@@ -4,3 +4,6 @@
   homepage has been done
 0.11
   burger menu position to absolute fix
+0.12
+  added alts to pics
+  deleted 1 pic(hero)
