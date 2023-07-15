@@ -9,3 +9,7 @@
   deleted 1 pic(hero)
 0.121
   changed /img to img in index.html
+0.13
+  added preheader
+  reworked header
+  reworked hero

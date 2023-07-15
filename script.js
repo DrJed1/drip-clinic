@@ -8,8 +8,8 @@ hamburger.addEventListener("click", () =>{
   headerHeight.classList.toggle("active");
 })
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navList.classList.remove("active");
-  headerHeight.classList.remove("active");
-}))
+// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+//   hamburger.classList.remove("active");
+//   navList.classList.remove("active");
+//   headerHeight.classList.remove("active");
+// }))
