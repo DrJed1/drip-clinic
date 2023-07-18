@@ -163,7 +163,7 @@ header {
 /* Хиро */
 
 main {
-  height: 60vh;
+  height: auto;
   display: flex;
   background-color: whitesmoke;
 }
@@ -235,8 +235,9 @@ main img {
 /* Приемущества */
 
 .benefits {
-  height: 40vh;
+  height: auto;
   background-color: var(--blue);
+  padding-bottom: 5vh;
 }
 .benefits h2 {
   text-align: center;
@@ -250,6 +251,7 @@ main img {
   justify-content: space-around;
   align-items: center;
   gap: 1em;
+  padding:
 }
 .benefits-block {
   width: 15em;
@@ -273,7 +275,6 @@ main img {
   .benefits {
     height: auto;
     max-width: 100%;
-    padding-bottom: 5vh;
   }
   .benefits-сontainer {
     justify-content: space-between;
@@ -307,6 +308,7 @@ main img {
 .clinic-img img {
   object-fit: contain;
   width: 100%;
+  box-shadow: -7px 7px 0px var(--blue);
 }
 @media (max-width: 768px) {
   .about-clinic {
@@ -322,7 +324,7 @@ main img {
 /* Наши услуги */
 
 .our-services {
-  height: 60vh;
+  height: auto;
   max-width: 70%;
   margin: auto;
 }
@@ -354,6 +356,41 @@ main img {
 }
 .our-services-block6 {
   grid-area: 3 / 2 / 4 / 3;
+}
+.our-services-block1,
+.our-services-block2,
+.our-services-block3,
+.our-services-block4,
+.our-services-block5,
+.our-services-block5,
+.our-services-block6{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.our-services-block1 img,
+.our-services-block2 img,
+.our-services-block3 img,
+.our-services-block4 img,
+.our-services-block5 img,
+.our-services-block5 img,
+.our-services-block6 img {
+  border-radius: 50%;
+  width: 7em;
+  border: 2px solid var(--blue);
+  padding:0.2em;
+}
+.our-services-block1 p,
+.our-services-block2 p,
+.our-services-block3 p,
+.our-services-block4 p,
+.our-services-block5 p,
+.our-services-block5 p,
+.our-services-block6 p{
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 /* .our-services-row {
   display: flex;
@@ -389,7 +426,7 @@ main img {
 /* Выезд нашего врача к вам домой */
 
 .home-doctor {
-  height: 50vh;
+  height: auto;
   max-width: 70%;
   margin: auto;
 }
@@ -400,13 +437,18 @@ main img {
   display: flex;
 }
 .home-doctor-img {
-  width: 130em;
+  width: 200em;
   margin-right: 2em;
+  align-self: center;
 }
 .home-doctor-img img {
   object-fit: contain;
   width: 100%;
   margin-bottom: 1em;
+  box-shadow: 10px 10px 0px var(--blue);
+}
+.home-doctor-container p{
+  line-height: 1.5em;
 }
 @media (max-width: 768px) {
   .home-doctor {
@@ -420,7 +462,7 @@ main img {
     width: auto;
   }
   .home-doctor-img img {
-    width: 10em;
+    width: 100%;
   }
 }
 
@@ -435,26 +477,33 @@ main img {
   padding: 1em;
 }
 .doctors-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 .doctor-block {
 }
 .doctor-block img {
   object-fit: fill;
-  width: 13em;
   height: 20em;
+  box-shadow: 5px -5px 0px var(--blue);
 }
 @media (max-width: 768px) {
   .doctors {
     height: auto;
     max-width: 95%;
   }
-  .doctors-container {
+  .doctor-block img {
+    object-fit: fill;
+    width: 70%;
+    height: auto;
+  }
+  /* .doctors-container {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 }
 
 /* Отзывы */
