@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue: #1d5d9b;
+  --orange: #f4d160;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +15,7 @@
 /* Прехедер */
 .preheader {
   height: 7vh;
-  background-color: white;
+  background-color: whitesmoke;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -24,7 +28,7 @@
   vertical-align: bottom;
 }
 .preheader button {
-  background-color: orange;
+  background-color: var(--orange);
   border-radius: 5px;
   color: white;
   border: none;
@@ -44,7 +48,7 @@
 /* Хедер */
 header {
   height: 10vh;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .nav-menu {
   display: flex;
@@ -72,7 +76,7 @@ header {
 .nav-link:after {
   content: "";
   position: absolute;
-  background-color: orange;
+  background-color: var(--orange);
   height: 3px;
   width: 0;
   left: 0;
@@ -88,7 +92,7 @@ header {
 .dropdown {
   position: absolute;
   display: none;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 1.5em;
   border-radius: 5px;
   top: 45px;
@@ -139,7 +143,7 @@ header {
     gap: 0.5em;
     font-size: 1.1rem;
   }
-  .dropdown{
+  .dropdown {
     z-index: 1000;
   }
   .nav-link {
@@ -159,9 +163,9 @@ header {
 /* Хиро */
 
 main {
-  background-image: url(img/hero-v3.png);
   height: 60vh;
   display: flex;
+  background-color: whitesmoke;
 }
 main img {
   scale: 80%;
@@ -172,57 +176,74 @@ main img {
   justify-content: center;
   padding: 5em;
 }
-.hero-text h1{
-  color: whitesmoke;
-  font-weight: 300;
+.hero-text h1 {
+  color: var(--blue);
+  font-weight: 400;
 }
 .hero-text h2 {
   margin-top: 2em;
-  color: whitesmoke;
+  color: black;
   font-weight: 300;
+  font-size: 1em;
 }
 .main-consult {
   margin-top: 2em;
 }
-.main-consult input{
+.main-consult input {
   border-radius: 5px;
-  padding:0.5em;
-  margin-right:0.3em;
+  padding: 0.5em;
+  margin-right: 0.3em;
+  border: 1px grey solid;
 }
 .main-consult button {
-  background-color: orange;
-  padding:0.5em;
+  background-color: var(--orange);
+  padding: 0.5em;
   border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
-.main-consult p{
-  margin-top:0.5em;
-  color: whitesmoke;
+.main-consult p {
+  margin-top: 0.5em;
+  color: black;
   font-weight: 300;
 }
 @media (max-width: 768px) {
   main {
     flex-direction: column;
     height: auto;
+    background-color: whitesmoke;
+    background-image: none;
   }
   .hero-text {
     padding: 1em;
     justify-content: flex-start;
   }
+  .hero-text h1 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--blue);
+  }
   .hero-text h2 {
     margin-top: 1em;
+  }
+  .main-consult p {
+    font-size: 0.8em;
   }
 }
 
 /* Приемущества */
 
 .benefits {
-  max-width: 70%;
-  margin: auto;
   height: 40vh;
+  background-color: var(--blue);
 }
 .benefits h2 {
   text-align: center;
   padding: 1em;
+  color: white;
+  font-weight: 500;
+  position: relative;
 }
 .benefits-сontainer {
   display: flex;
@@ -235,21 +256,31 @@ main img {
   height: 10em;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 1px;
-  padding: 0.5em;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: white;
+}
+.benefits-block img {
+  width: 6em;
 }
 .benefits-block p {
   text-align: center;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   .benefits {
     height: auto;
-    max-width: 95%;
+    max-width: 100%;
+    padding-bottom: 5vh;
   }
   .benefits-сontainer {
+    justify-content: space-between;
     flex-direction: column;
+  }
+  .benefits-block {
+    width: 85%;
   }
 }
 
@@ -262,10 +293,16 @@ main img {
   display: flex;
 }
 .clinic-description h2 {
-  margin-bottom: 1em;
+  padding: 1em 0;
+  font-weight: 400;
+}
+.clinic-description p {
+  line-height: 1.6rem;
 }
 .clinic-img {
-  width: 75em;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
 }
 .clinic-img img {
   object-fit: contain;
@@ -293,12 +330,37 @@ main img {
   text-align: center;
   padding: 1em;
 }
-.our-services-row {
+.our-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(3, 0);
+  grid-template-rows: repeat(3, 1fr) repeat(2, 0);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.our-services-block1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.our-services-block2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.our-services-block3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.our-services-block4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.our-services-block5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.our-services-block6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+/* .our-services-row {
   display: flex;
   flex: row;
   justify-content: space-between;
   margin-top: 1em;
-}
+} */
 .our-services-block {
   width: 15em;
   height: 10em;
@@ -317,11 +379,11 @@ main img {
     height: auto;
     max-width: 95%;
   }
-  .our-services-row {
+  /* .our-services-row {
     flex-direction: column;
     align-items: center;
     gap: 1em;
-  }
+  } */
 }
 
 /* Выезд нашего врача к вам домой */
