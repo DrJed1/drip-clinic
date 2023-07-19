@@ -27,3 +27,6 @@
   added underline to all h2
   specialists - added more space between pictures
   reviews - added name and stars
+0.17
+  reworked contacts - added box and shadow+some text decoration
+  reworked footer - removed contacts, changed color, text decoration

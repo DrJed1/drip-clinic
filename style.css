@@ -577,21 +577,22 @@ main img {
   max-width: 70%;
   margin: auto;
   text-align: center;
+  padding-bottom: 1.5em;
 }
 .reviews h2 {
   padding: 1em 0;
   display: inline-block;
   position: relative;
 }
-.reviews h2::after{
+.reviews h2::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  bottom:18px;
+  bottom: 18px;
   border-radius: 10px;
   background-color: #1d5d9b;
-  left:0px;
+  left: 0px;
 }
 .reviews-container {
   display: flex;
@@ -607,15 +608,15 @@ main img {
   display: flex;
   flex-direction: column;
 }
-.reviews-name-rate{
+.reviews-name-rate {
   display: flex;
   justify-content: space-between;
 }
-.reviews-name-rate p{
-  color:gray;
+.reviews-name-rate p {
+  color: gray;
   font-size: 0.8rem;
 }
-.reviews-name-rate img{
+.reviews-name-rate img {
   height: 1em;
   width: auto;
 }
@@ -625,7 +626,7 @@ main img {
   right: 10px;
   scale: 150%;
 }
-.reviews-disclaimer p{
+.reviews-disclaimer p {
   opacity: 50%;
   font-size: 0.7rem;
 }
@@ -644,6 +645,10 @@ main img {
   height: 70vh;
   max-width: 70%;
   margin: auto;
+  border: 1px solid grey;
+  box-shadow: 0px 0px 5px grey;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 .contacts-container {
   display: flex;
@@ -652,23 +657,24 @@ main img {
 .contacts-numbers {
   line-height: 2em;
   text-align: center;
+  padding-bottom: 1em;
 }
 .contacts-numbers h2 {
   padding: 1em 0;
   position: relative;
   display: inline-block;
 }
-.contacts-numbers h2::after{
+.contacts-numbers h2::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  bottom:18px;
+  bottom: 18px;
   border-radius: 10px;
   background-color: #1d5d9b;
-  left:0px;
+  left: 0px;
 }
-.contacts-numbers p{
+.contacts-numbers p {
   text-align: left;
 }
 @media (max-width: 768px) {
@@ -690,11 +696,24 @@ main img {
   height: 20vh;
   display: flex;
   justify-content: space-between;
-  background-color: #afd3e2;
+  background-color: var(--blue);
   align-items: center;
+  padding: 1em 2em;
 }
-.footer-services ul li {
-  margin-bottom: 0.3em;
+.footer-logo{
+  padding-bottom:1em;
+}
+.footer-services ul li{
+  color: white;
+  margin-bottom: 0.6em;
+  font-weight: 300;
+}
+.footer-services ul li a{
+  color: white;
+  font-weight: 300;
+}
+.footer-services{
+  padding-bottom:1em;
 }
 .year {
   text-align: center;
