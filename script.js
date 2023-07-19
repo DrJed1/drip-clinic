@@ -8,6 +8,12 @@ hamburger.addEventListener("click", () =>{
   headerHeight.classList.toggle("active");
 })
 
+const expandReview = document.querySelector(".reviews-block")
+
+expandReview.addEventListener("click", () =>{
+  expandReview.classList.toggle("active");
+})
+
 // document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
 //   hamburger.classList.remove("active");
 //   navList.classList.remove("active");
