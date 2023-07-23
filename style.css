@@ -47,7 +47,7 @@
 }
 /* Хедер */
 header {
-  height: 10vh;
+  height: auto;
   background-color: white;
 }
 .nav-menu {
@@ -92,13 +92,21 @@ header {
 .dropdown {
   position: absolute;
   display: none;
+  width: 18em;
   background-color: white;
-  padding: 1.5em;
+  padding: 1em 2em;
   border-radius: 5px;
   top: 45px;
+  text-align: center;
 }
 .dropdown li {
   margin-top: 1em;
+}
+.dropdown li a{
+  transition: 0.3s ease-in;
+}
+.dropdown li a:hover{
+  color: grey;
 }
 .services:hover .dropdown {
   display: block;
@@ -144,7 +152,9 @@ header {
     font-size: 1.1rem;
   }
   .dropdown {
+    margin-left:-5em;
     z-index: 1000;
+    padding:1em 1em;
   }
   .nav-link {
     padding: 0;
@@ -573,7 +583,7 @@ main img {
 /* Отзывы */
 
 .reviews {
-  height: 30vh;
+  height: 90vh;
   max-width: 70%;
   margin: auto;
   text-align: center;
@@ -597,6 +607,7 @@ main img {
 .reviews-container {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
 }
 .reviews-block {
   font-size: 14px;
@@ -611,6 +622,7 @@ main img {
 .reviews-name-rate {
   display: flex;
   justify-content: space-between;
+  padding-top: 0.3em;
 }
 .reviews-name-rate p {
   color: gray;

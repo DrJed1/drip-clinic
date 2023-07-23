@@ -1,0 +1,30 @@
+.q{
+  max-width: 60%;
+  margin: auto;
+}
+.q h2{
+  position: relative;
+  display: inline-block;
+  padding:1em 0;
+}
+.q h2:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 18px;
+  border-radius: 10px;
+  background-color: #1d5d9b;
+  left: 0px;
+}
+.q p{
+  line-height: 1.5em;
+}
+.q ul li{
+  margin-bottom:0.5em;
+}
+@media (max-width:768px) {
+  .q{
+    max-width: 95%;
+  }
+}
