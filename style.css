@@ -102,10 +102,10 @@ header {
 .dropdown li {
   margin-top: 1em;
 }
-.dropdown li a{
+.dropdown li a {
   transition: 0.3s ease-in;
 }
-.dropdown li a:hover{
+.dropdown li a:hover {
   color: grey;
 }
 .services:hover .dropdown {
@@ -122,6 +122,16 @@ header {
   margin: 5px auto;
   transition: 0.3s ease-in-out;
   background-color: black;
+}
+.social {
+  display: flex;
+}
+.teleg,
+.viber,
+.inst {
+  width: 1.5em;
+  margin-left: 0.5em;
+  opacity: 70%;
 }
 @media (max-width: 768px) {
   .nav-menu {
@@ -152,9 +162,11 @@ header {
     font-size: 1.1rem;
   }
   .dropdown {
-    margin-left:-5em;
+    margin-left: -5em;
     z-index: 1000;
-    padding:1em 1em;
+    padding: 1em 1em;
+    border: 1px solid grey;
+    top: 0px;
   }
   .nav-link {
     padding: 0;
@@ -166,6 +178,9 @@ header {
     height: 40vh;
   }
   .services:active .dropdown {
+    display: block;
+  }
+  .teleg {
     display: block;
   }
 }
@@ -248,6 +263,9 @@ main img {
   height: auto;
   background-color: var(--blue);
   padding-bottom: 5vh;
+  max-width: 80%;
+  margin: auto;
+  border-radius: 10px;
 }
 .benefits h2 {
   text-align: center;
@@ -302,6 +320,7 @@ main img {
   max-width: 70%;
   margin: auto;
   display: flex;
+  padding-bottom:2em;
 }
 .clinic-description h2 {
   padding: 1em 0;
@@ -323,9 +342,10 @@ main img {
   line-height: 1.6rem;
 }
 .clinic-img {
-  width: auto;
+  width: 165em;
   display: flex;
   align-items: flex-end;
+  padding:1em;
 }
 .clinic-img img {
   object-fit: contain;
@@ -712,20 +732,20 @@ main img {
   align-items: center;
   padding: 1em 2em;
 }
-.footer-logo{
-  padding-bottom:1em;
+.footer-logo {
+  padding-bottom: 1em;
 }
-.footer-services ul li{
+.footer-services ul li {
   color: white;
   margin-bottom: 0.6em;
   font-weight: 300;
 }
-.footer-services ul li a{
+.footer-services ul li a {
   color: white;
   font-weight: 300;
 }
-.footer-services{
-  padding-bottom:1em;
+.footer-services {
+  padding-bottom: 1em;
 }
 .year {
   text-align: center;

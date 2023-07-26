@@ -33,3 +33,9 @@
 0.18
   added subpages - analyzed market, competitiors, keywords; added html, css and text filling
   reworked pc version of reviews - they show right
+0.19
+  reworked header - icons of telegram, viber, instagram now shown there
+  added accordion faq on subpages
+  reworked homepage - now problem/solution on the top
+  reworked size of benefits - now it's max-height 70%
+  added some bold text on subpages
