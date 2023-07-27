@@ -389,8 +389,8 @@ main img {
 }
 .our-services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) repeat(3, 0);
-  grid-template-rows: repeat(3, 1fr) repeat(2, 0);
+  grid-template-columns: repeat(2, 1fr) repeat(2, 0);
+  grid-template-rows: repeat(2, 1fr) repeat(2, 0);
   grid-column-gap: 0px;
   grid-row-gap: 1em;
 }
@@ -406,12 +406,12 @@ main img {
 .our-services-block4 {
   grid-area: 2 / 2 / 3 / 3;
 }
-.our-services-block5 {
+/* .our-services-block5 {
   grid-area: 3 / 1 / 4 / 2;
 }
 .our-services-block6 {
   grid-area: 3 / 2 / 4 / 3;
-}
+} */
 .our-services-block1,
 .our-services-block2,
 .our-services-block3,

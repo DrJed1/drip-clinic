@@ -39,3 +39,7 @@
   reworked homepage - now problem/solution on the top
   reworked size of benefits - now it's max-height 70%
   added some bold text on subpages
+0.20
+  removed 2 blocks in services block
+  forgot to apply faq section in some subpaged (fixed)
+  fixed footer services display order
