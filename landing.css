@@ -1,0 +1,9 @@
+.main-website-button-container{
+  display: flex;
+  justify-content: center;
+}
+.main-website-button {
+  width: 50%;
+  align-self: center;
+  padding:0.3em;
+}

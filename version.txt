@@ -43,3 +43,9 @@
   removed 2 blocks in services block
   forgot to apply faq section in some subpaged (fixed)
   fixed footer services display order
+0.21 
+  remaked hero - added pictures, added telegram-bot to phone number
+  benefits has been removed from subpages
+  added floating phone to pages
+  remaked doctors section - changed photos and description
+  added 2 columns to reviews

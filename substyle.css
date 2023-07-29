@@ -2,6 +2,9 @@
   --blue: #1d5d9b;
   --orange: #f4d160;
 }
+
+/* Главный текст сайта */
+
 .q {
   max-width: 60%;
   margin: auto;
@@ -32,12 +35,15 @@
     max-width: 95%;
   }
 }
+
+/* Часто задаваемые вопросы */
+
 .faq-container {
   max-width: 60%;
   margin: auto;
   padding-bottom: 1em;
 }
-.faq-container h2{
+.faq-container h2 {
   position: relative;
   display: inline-block;
   padding: 1em 0;
@@ -52,8 +58,8 @@
   background-color: #1d5d9b;
   left: 0px;
 }
-#faq-accordion li{
-  border:1px solid var(--blue);
+#faq-accordion li {
+  border: 1px solid var(--blue);
   padding: 0.5em;
   border-radius: 4px;
   margin-bottom: 0.3em;
@@ -65,7 +71,7 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  padding:0.5 0em;
+  padding: 0.5 0em;
 }
 #faq-accordion li label span {
   transform: rotate(90deg);
@@ -75,16 +81,32 @@
 #faq-accordion li label + input[type="radio"] {
   display: none;
 }
-.faq-content{
+.faq-content {
   max-height: 0;
   overflow: hidden;
-  margin-bottom:0.5em;
+  margin-bottom: 0.5em;
 }
-#faq-accordion li label + input[type="radio"]:checked + .faq-content{
+#faq-accordion li label input[type="radio"]:checked ~ .faq-content {
   max-height: max-content;
 }
-@media (max-width: 768px){
-  .faq-container{
+@media (max-width: 768px) {
+  .faq-container {
     max-width: 95%;
+  }
+}
+
+.benefits {
+  height: auto;
+  background-color: var(--blue);
+  padding-bottom: 5vh;
+  max-width: 60%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    height: auto;
+    max-width: 100%;
   }
 }

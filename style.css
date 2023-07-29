@@ -12,6 +12,23 @@
   text-decoration: none;
   color: black;
 }
+/* Леветирующий телефон */
+.sticky-phone {
+  margin-top: -4em;
+  top: 85%;
+  margin-left: 95%;
+  position: sticky;
+  cursor: pointer;
+}
+.sticky-phone a img {
+  width: 4em;
+  opacity: 80%;
+}
+@media (max-width: 768px){
+  .sticky-phone{
+    margin-left:75%;
+  }
+}
 /* Прехедер */
 .preheader {
   height: 7vh;
@@ -156,23 +173,27 @@ header {
     flex-direction: column;
   }
   .nav-list.active {
-    left: 30%;
+    left: 0%;
     top: 17%;
     gap: 0.5em;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    gap:2em;
   }
+
   .dropdown {
-    margin-left: -5em;
+    margin-left: 80%;
     z-index: 1000;
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
     border: 1px solid grey;
-    top: 0px;
+    top: -40px;
   }
   .nav-link {
     padding: 0;
   }
   .nav-link:after {
-    bottom: -3px;
+    bottom: -6px;
+    width: 100%;
   }
   header.active {
     height: 40vh;
@@ -190,10 +211,9 @@ header {
 main {
   height: auto;
   display: flex;
-  background-color: whitesmoke;
-}
-main img {
-  scale: 80%;
+  background-color: var(--blue);
+  border-radius: 0 0 10px 10px;
+  justify-content: space-between;
 }
 .hero-text {
   display: flex;
@@ -202,12 +222,12 @@ main img {
   padding: 5em;
 }
 .hero-text h1 {
-  color: var(--blue);
+  color: white;
   font-weight: 400;
 }
 .hero-text h2 {
   margin-top: 2em;
-  color: black;
+  color: whitesmoke;
   font-weight: 300;
   font-size: 1em;
 }
@@ -225,19 +245,35 @@ main img {
   padding: 0.5em;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: black;
   cursor: pointer;
 }
-.main-consult p {
+#success{
+  color: white;
+  font-weight: 600;
+  padding:0.5em;
+  display: none;
+}
+.main-cities {
   margin-top: 0.5em;
-  color: black;
+  color: whitesmoke;
   font-weight: 300;
+}
+.hero-img {
+  width: 30em;
+  height: 100%;
+  align-self: center;
+}
+.hero-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
 }
 @media (max-width: 768px) {
   main {
     flex-direction: column;
     height: auto;
-    background-color: whitesmoke;
     background-image: none;
   }
   .hero-text {
@@ -247,13 +283,18 @@ main img {
   .hero-text h1 {
     text-align: center;
     font-weight: 500;
-    color: var(--blue);
   }
   .hero-text h2 {
     margin-top: 1em;
   }
   .main-consult p {
     font-size: 0.8em;
+  }
+  .hero-img {
+    width: 95%;
+  }
+  .hero-img img {
+    border-radius: 5px;
   }
 }
 
@@ -320,7 +361,7 @@ main img {
   max-width: 70%;
   margin: auto;
   display: flex;
-  padding-bottom:2em;
+  padding-bottom: 2em;
 }
 .clinic-description h2 {
   padding: 1em 0;
@@ -345,7 +386,7 @@ main img {
   width: 165em;
   display: flex;
   align-items: flex-end;
-  padding:1em;
+  padding: 1em;
 }
 .clinic-img img {
   object-fit: contain;
@@ -581,8 +622,12 @@ main img {
   width: auto;
   box-shadow: 5px -5px 0px var(--blue);
 }
+.doctor-block h4{
+  font-size: 0.9rem;
+}
 .doctor-block p {
   text-align: center;
+  font-size: 0.9rem;
 }
 @media (max-width: 768px) {
   .doctors {
@@ -603,7 +648,7 @@ main img {
 /* Отзывы */
 
 .reviews {
-  height: 90vh;
+  height: auto;
   max-width: 70%;
   margin: auto;
   text-align: center;
@@ -626,8 +671,18 @@ main img {
 }
 .reviews-container {
   display: flex;
+  flex-direction: column;
+}
+.reviews-column1 {
+  display: flex;
   gap: 1em;
   flex-wrap: wrap;
+  padding-bottom: 0.5em;
+}
+.reviews-column2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 .reviews-block {
   font-size: 14px;
@@ -638,11 +693,14 @@ main img {
   text-align: left;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.reviews-block p {
 }
 .reviews-name-rate {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.3em;
+  padding: 0.3em 0;
 }
 .reviews-name-rate p {
   color: gray;
@@ -652,15 +710,11 @@ main img {
   height: 1em;
   width: auto;
 }
-.chevron-down {
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
-  scale: 150%;
-}
 .reviews-disclaimer p {
   opacity: 50%;
   font-size: 0.7rem;
+  text-align: center;
+  padding: 0.3em 0;
 }
 @media (max-width: 768px) {
   .reviews {
@@ -709,7 +763,7 @@ main img {
 .contacts-numbers p {
   text-align: left;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .contacts {
     height: auto;
     max-width: 95%;

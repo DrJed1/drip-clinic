@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Безопасная наркология</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- link to title -->
+    <!-- link to boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="landing.css" />
     <link rel="icon" href="img/title-icon.png" type="image/x-icon" />
   </head>
   <body>
-    <!-- Летающая трубка -->
-    <div class="sticky-phone">
-      <a href="tel:+380500216957"
-        ><img src="img/icons/sticky-telephone.png" alt="sticky-phone"
-      /></a>
-    </div>
     <!-- Прехедер -->
     <div class="preheader">
       <p class="preheader-hours">
@@ -34,7 +33,7 @@
     <!-- Хедер -->
 
     <header>
-      <nav class="nav-menu">
+      <nav class="nav-menu" style="margin-right: 1em">
         <a href="/" class="nav-logo"><img src="img/logo3.png" alt="logo" /></a>
         <div class="social">
           <a href="teleg-link.com"
@@ -47,35 +46,13 @@
             ><img src="img/icons/instagram.png" class="inst" alt="telegram"
           /></a>
         </div>
-        <ul class="nav-list">
-          <li><a class="nav-link" href="/">Главная</a></li>
-          <li class="services">
-            <a class="nav-link" href="javascript:;">Услуги</a>
-            <ul class="dropdown">
-              <li>
-                <a href="kapelnitsya-ot-alc"
-                  >Капельница от алкогольной интоксикации</a
-                >
-              </li>
-              <li><a href="kodirovanie-ot-alc">Кодирование от алколизма</a></li>
-              <li>
-                <a href="vivod-iz-zapoya">Вывод из запоя на дому</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="#">Контакты</a></li>
-          <li><a class="nav-link" href="#">О нас</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span><span class="bar"></span
-          ><span class="bar"></span>
-        </div>
       </nav>
     </header>
 
     <!-- Хиро -->
 
     <main>
+      <!-- <img src="img/draft.jpg" alt="patient-in-bed" /> -->
       <div class="hero-text">
         <div>
           <h1>Лечение алкогольной зависимости <br />в Одессе</h1>
@@ -86,25 +63,15 @@
             дому
           </h2>
         </div>
-        <form id="tg">
-          <div class="main-consult">
-            <input
-              type="tel"
-              class="form-control"
-              name="user_phone"
-              id="user_phone"
-              placeholder="XXXXXXXX"
-              value="+380"
-              minlength="13"
-              maxlength="13"
-            /><button type="submit">Беслатная консультация</button>
-            <div id="success">Сообщение отравлено!</div>
-          </div>
-        </form>
-        <p class="main-cities">Работаем в Одессе, Киеве, Львове, Харькове, Днепре</p>
-      </div>
-      <div class="hero-img">
-        <img src="img/hero-index.png" alt="alcoholic" />
+        <div class="main-consult">
+          <input type="text" placeholder="+38" id="" /><button>
+            Беслатная консультация
+          </button>
+          <p>Работаем в Одессе, Киеве, Львове, Харькове, Днепре</p>
+        </div>
+        <div class="main-website-button-container">
+          <button class="main-website-button">Перейти на основной сайт</button>
+        </div>
       </div>
     </main>
 
@@ -148,7 +115,7 @@
           <p>Доступные цены</p>
         </div>
         <div class="benefits-block">
-          <img src="img/icons/home.png" alt="home-arrival" />
+          <img src="img/icons/home2.png" alt="home-arrival" />
           <p>Выезд на дом</p>
         </div>
       </div>
@@ -209,24 +176,24 @@
       <h2>Наши спецалисты</h2>
       <div class="doctors-container">
         <div class="doctor-block">
-          <img src="img/doc1.jpg" alt="team-person1" />
-          <h4>Станислав Вячеславович Кресюн</h4>
-          <p>Основатель клиники. Врач нарколог - стаж работы 5 лет.</p>
+          <img src="img/doc1.png" alt="team-person1" />
+          <h4>Стас Аскет</h4>
+          <p>Доктор наук</p>
         </div>
         <div class="doctor-block">
-          <img src="img/doc2.jpg" alt="team-person2" />
-          <h4>Владислав Алексеевич Бажора</h4>
-          <p>Врач нарколог - стаж работы 4 года</p>
+          <img src="img/doc2.png" alt="team-person2" />
+          <h4>Владислав Короткий</h4>
+          <p>Научный специалистист</p>
         </div>
         <div class="doctor-block">
-          <img src="img/doc3.jpg" alt="team-person3" />
-          <h4>Алексей Валерьевич Тирон</h4>
-          <p>Врач нарколог - стаж работы 5 лет</p>
+          <img src="img/doc3.png" alt="team-person3" />
+          <h4>Алексей Дикий</h4>
+          <p>Игрок в гольф</p>
         </div>
         <div class="doctor-block">
-          <img src="img/doc4.jpg" alt="team-person4" />
-          <h4>Михаил Валентинович Вастянов</h4>
-          <p>Врач нарколог - стаж работы 4 года</p>
+          <img src="img/doc4.png" alt="team-person4" />
+          <h4>Михаил Антисептик</h4>
+          <p>Альпинист</p>
         </div>
       </div>
     </div>
@@ -236,97 +203,74 @@
     <div class="reviews">
       <h2>Отзывы пациентов:</h2>
       <div class="reviews-container">
-        <div class="reviews-column1">
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p class="reviews-text">
-              "Доктор Алексей - великолепный врач-нарколог! Его профессионализм
-              и эмпатия помогли мне пережить трудные моменты и обрести новую
-              жизнь."
-            </p>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Спасибо, доктор Алексей, за вашу неоценимую помощь в борьбе с
-              наркотической зависимостью. Вы истинный спаситель!"
-            </p>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Если не врач Алексей, то я бы никогда не справился. Он не только
-              лечит, но и внушает веру в себя. Благодарю его от всей души!"
-            </p>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Признательность и уважение к врачу Алексею за его профессионализм
-              и теплоту. Он сделал невозможное возможным - я снова живу!"
-            </p>
+        <div class="reviews-block">
+          "Доктор Алексей - великолепный врач-нарколог! Его профессионализм и
+          эмпатия помогли мне пережить трудные моменты и обрести новую жизнь."
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
           </div>
         </div>
-        <div class="reviews-column2">
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Доктор Сергей - настоящий гений! Его опыт и забота помогли мне
-              преодолеть зависимость и вернуться к нормальной жизни."
-            </p>
+        <div class="reviews-block">
+          "Спасибо, доктор Алексей, за вашу неоценимую помощь в борьбе с
+          наркотической зависимостью. Вы истинный спаситель!"
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Спасибо, доктор Сергей, за ваше непревзойденное мастерство и
-              поддержку. Вы - настоящий герой, спасший меня от ужасной
-              зависимости."
-            </p>
+        </div>
+        <div class="reviews-block">
+          "Если не врач Алексей, то я бы никогда не справился. Он не только
+          лечит, но и внушает веру в себя. Благодарю его от всей души!"
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Доктор Сергей - исключительный профессионал и человек с золотым
-              сердцем. Я благодарен ему за его бесценную помощь и доброту."
-            </p>
+        </div>
+        <div class="reviews-block">
+          "Признательность и уважение к врачу Алексею за его профессионализм и
+          теплоту. Он сделал невозможное возможным - я снова живу!"
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонимно</p>
-              <img src="img/rating.png" alt="" />
-            </div>
-            <p>
-              "Благодаря доктору Сергею я смог преодолеть свои слабости и
-              вернуться к нормальной жизни. Он настоящий врач-герой, спаситель в
-              моих глазах."
-            </p>
+        </div>
+        <div class="reviews-block">
+          "Доктор Сергей - настоящий гений! Его опыт и забота помогли мне
+          преодолеть зависимость и вернуться к нормальной жизни."
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
+          </div>
+        </div>
+        <div class="reviews-block">
+          "Спасибо, доктор Сергей, за ваше непревзойденное мастерство и
+          поддержку. Вы - настоящий герой, спасший меня от ужасной зависимости."
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
+          </div>
+        </div>
+        <div class="reviews-block">
+          "Доктор Сергей - исключительный профессионал и человек с золотым
+          сердцем. Я благодарен ему за его бесценную помощь и доброту."
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
+          </div>
+        </div>
+        <div class="reviews-block">
+          "Благодаря доктору Сергею я смог преодолеть свои слабости и вернуться
+          к нормальной жизни. Он настоящий врач-герой, спаситель в моих глазах."
+          <div class="reviews-name-rate">
+            <p>Анонимно</p>
+            <img src="img/rating.png" alt="" />
           </div>
         </div>
       </div>
-    </div>
-    <div class="reviews-disclaimer">
-      <p>Отзыв можно оставить после оказания вам услуги</p>
+      <div class="reviews-disclaimer">
+        <p>Отзыв можно оставить после оказания вам услуги</p>
+      </div>
     </div>
 
     <!-- Наши контакты -->
@@ -387,27 +331,3 @@
   </body>
 </html>
 <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script>
-  const CHAT_ID = "-913542926";
-  const URI_API =
-    "https://api.telegram.org/bot6574586981:AAHaBa0jIw2PRv6-EoCnTP0ZyWR6k6wl14Y/sendMessage";
-
-  document.getElementById("tg").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let massage = "<b>Кинули заявку(Главная страница):</b>";
-    massage += document.getElementById("user_phone").value;
-
-    axios
-      .post(URI_API, {
-        chat_id: CHAT_ID,
-        parse_mode: "html",
-        text: massage,
-      })
-      .then((res) => {
-        this.user_phone.value = "";
-        success.style.display = "block";
-      });
-  });
-</script>
