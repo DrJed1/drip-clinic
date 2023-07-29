@@ -86,7 +86,7 @@
   overflow: hidden;
   margin-bottom: 0.5em;
 }
-#faq-accordion li label input[type="radio"]:checked ~ .faq-content {
+#faq-accordion li label + input[type="radio"]:checked + .faq-content {
   max-height: max-content;
 }
 @media (max-width: 768px) {

@@ -49,3 +49,5 @@
   added floating phone to pages
   remaked doctors section - changed photos and description
   added 2 columns to reviews
+0.21a
+  microfix accordion
