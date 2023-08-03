@@ -51,3 +51,7 @@
   added 2 columns to reviews
 0.21a
   microfix accordion
+0.22
+  added contacts and about-us pages
+  changed logo
+  changed reviews to more realistic
