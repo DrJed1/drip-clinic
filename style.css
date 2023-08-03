@@ -24,15 +24,15 @@
   width: 4em;
   opacity: 80%;
 }
-@media (max-width: 768px){
-  .sticky-phone{
-    margin-left:75%;
+@media (max-width: 768px) {
+  .sticky-phone {
+    margin-left: 75%;
   }
 }
 /* Прехедер */
 .preheader {
   height: 7vh;
-  background-color: whitesmoke;
+  background-color: var(--blue);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -43,6 +43,9 @@
   opacity: 0.5;
   display: inline-block;
   vertical-align: bottom;
+}
+.preheader a{
+  color: white;
 }
 .preheader button {
   background-color: var(--orange);
@@ -178,7 +181,7 @@ header {
     gap: 0.5em;
     font-size: 1rem;
     font-weight: 500;
-    gap:2em;
+    gap: 2em;
   }
 
   .dropdown {
@@ -230,7 +233,6 @@ main {
   color: whitesmoke;
   font-weight: 300;
   font-size: 1em;
-  text-align: center;
 }
 .main-consult {
   margin-top: 2em;
@@ -249,10 +251,10 @@ main {
   color: whitesmoke;
   cursor: pointer;
 }
-#success{
+#success {
   color: white;
   font-weight: 600;
-  padding:0.5em;
+  padding: 0.5em;
   display: none;
 }
 .main-cities {
@@ -287,6 +289,7 @@ main {
   }
   .hero-text h2 {
     margin-top: 1em;
+    text-align: center;
   }
   .main-consult p {
     font-size: 0.8em;
@@ -623,7 +626,7 @@ main {
   width: auto;
   box-shadow: 5px -5px 0px var(--blue);
 }
-.doctor-block h4{
+.doctor-block h4 {
   font-size: 0.9rem;
 }
 .doctor-block p {

@@ -56,6 +56,9 @@
   changed logo
   changed reviews to more realistic
 0.22a
-  chenged logo
+  changed logo
   changed button color
   changed hero h2 text to center and as list
+0.22b
+  changed preheader color
+  added CNAME
