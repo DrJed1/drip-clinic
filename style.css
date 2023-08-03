@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 :root {
   --blue: #1d5d9b;
-  --orange: #f4d160;
+  --orange: #ff241d;
 }
 * {
   padding: 0;
@@ -230,6 +230,7 @@ main {
   color: whitesmoke;
   font-weight: 300;
   font-size: 1em;
+  text-align: center;
 }
 .main-consult {
   margin-top: 2em;
@@ -245,7 +246,7 @@ main {
   padding: 0.5em;
   border-radius: 5px;
   border: none;
-  color: black;
+  color: whitesmoke;
   cursor: pointer;
 }
 #success{

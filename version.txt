@@ -55,3 +55,7 @@
   added contacts and about-us pages
   changed logo
   changed reviews to more realistic
+0.22a
+  chenged logo
+  changed button color
+  changed hero h2 text to center and as list
