@@ -62,3 +62,8 @@
 0.22b
   changed preheader color
   added CNAME
+0.23
+  chanched preheader color and preheader text color to white
+  added sitemap
+  changed flavicon
+  added 404 page
