@@ -67,3 +67,9 @@
   added sitemap
   changed flavicon
   added 404 page
+0.23a
+  changed orange color in substile as style
+  changed preheader button text
+  added links to social
+  hero tel+call now flex
+

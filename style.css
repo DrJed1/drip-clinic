@@ -239,6 +239,7 @@ main {
 }
 .main-consult {
   margin-top: 2em;
+  display: flex;
 }
 .main-consult input {
   border-radius: 5px;
@@ -399,6 +400,7 @@ main {
   object-fit: contain;
   width: 100%;
   box-shadow: -7px 7px 0px var(--blue);
+  border-radius: 10px 10px 10px 0px;
 }
 @media (max-width: 768px) {
   .about-clinic {
