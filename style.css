@@ -400,7 +400,7 @@ main {
   object-fit: contain;
   width: 100%;
   box-shadow: -7px 7px 0px var(--blue);
-  border-radius: 10px 10px 10px 0px;
+  border-radius:0px 10px 0px 0px;
 }
 @media (max-width: 768px) {
   .about-clinic {
@@ -569,6 +569,7 @@ main {
   width: 100%;
   margin-bottom: 1em;
   box-shadow: 10px 10px 0px var(--blue);
+  border-radius: 10px 0px 0px 0px;
 }
 .home-doctor-container p {
   line-height: 1.5em;
@@ -630,6 +631,7 @@ main {
   height: 20em;
   width: auto;
   box-shadow: 5px -5px 0px var(--blue);
+  border-radius: 0 0 0 10px;
 }
 .doctor-block h4 {
   font-size: 0.9rem;

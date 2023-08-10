@@ -72,4 +72,4 @@
   changed preheader button text
   added links to social
   hero tel+call now flex
-
+  added border-box to pics
