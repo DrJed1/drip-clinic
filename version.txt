@@ -73,3 +73,6 @@
   added links to social
   hero tel+call now flex
   added border-box to pics
+0.24
+  added cities
+  minor fixes
