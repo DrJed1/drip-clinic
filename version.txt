@@ -76,3 +76,6 @@
 0.24
   added cities
   minor fixes
+0.24a
+  404 fix
+  docs photos changed
