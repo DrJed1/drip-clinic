@@ -79,3 +79,5 @@
 0.24a
   404 fix
   docs photos changed
+0.24b
+  added google analytics

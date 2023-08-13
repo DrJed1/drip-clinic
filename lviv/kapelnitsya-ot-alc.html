@@ -354,7 +354,14 @@
             >
           </p>
           <p><b>Адрес:</b> г. Львов</p>
-          <p><b>Telegram:</b><a href="t.me/umbrellaplus" style="color: lightblue; text-decoration: underline;">t.me/umbrellaplus</a></p>
+          <p>
+            <b>Telegram:</b
+            ><a
+              href="t.me/umbrellaplus"
+              style="color: lightblue; text-decoration: underline"
+              >t.me/umbrellaplus</a
+            >
+          </p>
           <p><b>График работы:</b> Круглосуточно</p>
         </div>
         <div class="contacts-map">
@@ -407,7 +414,8 @@
   document.getElementById("tg").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    let massage = "<b>Кинули заявку(Капельница от алк. интоксикации)-ЛЬВОВ:</b>";
+    let massage =
+      "<b>Кинули заявку(Капельница от алк. интоксикации)-ЛЬВОВ:</b>";
     massage += document.getElementById("user_phone").value;
 
     axios

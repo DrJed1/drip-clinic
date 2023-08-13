@@ -82,7 +82,9 @@
       <!-- <img src="img/draft.jpg" alt="patient-in-bed" /> -->
       <div class="hero-text">
         <div>
-          <h1>Капельница от алкогольной интоксикации на дому<br />в Харькове</h1>
+          <h1>
+            Капельница от алкогольной интоксикации на дому<br />в Харькове
+          </h1>
         </div>
         <div>
           <h2>
@@ -354,7 +356,14 @@
             >
           </p>
           <p><b>Адрес:</b> г. Харьков</p>
-          <p><b>Telegram:</b><a href="t.me/umbrellaplus" style="color: lightblue; text-decoration: underline;">t.me/umbrellaplus</a></p>
+          <p>
+            <b>Telegram:</b
+            ><a
+              href="t.me/umbrellaplus"
+              style="color: lightblue; text-decoration: underline"
+              >t.me/umbrellaplus</a
+            >
+          </p>
           <p><b>График работы:</b> Круглосуточно</p>
         </div>
         <div class="contacts-map">
@@ -407,7 +416,8 @@
   document.getElementById("tg").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    let massage = "<b>Кинули заявку(Капельница от алк. интоксикации)-ХАРЬКОВ:</b>";
+    let massage =
+      "<b>Кинули заявку(Капельница от алк. интоксикации)-ХАРЬКОВ:</b>";
     massage += document.getElementById("user_phone").value;
 
     axios
