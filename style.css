@@ -328,7 +328,6 @@ main {
   justify-content: space-around;
   align-items: center;
   gap: 1em;
-  padding: ;
 }
 .benefits-block {
   width: 15em;
@@ -705,8 +704,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-.reviews-block p {
 }
 .reviews-name-rate {
   display: flex;

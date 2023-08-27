@@ -81,3 +81,5 @@
   docs photos changed
 0.24b
   added google analytics
+0.25
+  removed "odessa" from "kodirovanie" page
