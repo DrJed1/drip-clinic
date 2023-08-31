@@ -83,3 +83,7 @@
   added google analytics
 0.25
   removed "odessa" from "kodirovanie" page
+0.26
+  added cinderella page
+  menu adjusted for cinderella page
+  logo from other pages now points to town oriented page

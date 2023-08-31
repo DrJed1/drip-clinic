@@ -180,7 +180,7 @@ header {
   }
   .nav-list.active {
     left: 0%;
-    top: 17%;
+    top: 15%;
     gap: 0.5em;
     font-size: 1rem;
     font-weight: 500;
