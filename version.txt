@@ -87,3 +87,5 @@
   added cinderella page
   menu adjusted for cinderella page
   logo from other pages now points to town oriented page
+0.26а
+  added google tag on every page
