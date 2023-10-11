@@ -91,3 +91,5 @@
   added google tag on every page
 0.26b
   added google tag body "no-script"
+0.26c
+  removed Odessa from index
