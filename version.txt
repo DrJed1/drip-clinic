@@ -93,3 +93,5 @@
   added google tag body "no-script"
 0.26c
   removed Odessa from index
+0.26d
+  kodirovanie - bug in price
