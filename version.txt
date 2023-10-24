@@ -95,3 +95,5 @@
   removed Odessa from index
 0.26d
   kodirovanie - bug in price
+0.26e
+  changed adress
