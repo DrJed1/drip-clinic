@@ -97,3 +97,5 @@
   kodirovanie - bug in price
 0.26e
   changed adress
+0.27f
+  added missing letter
