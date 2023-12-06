@@ -83,6 +83,10 @@ header {
 .nav-logo {
   margin-top: 5px;
 }
+.nav-lang{
+  margin-left:1em;
+  font-size:1.1rem;
+}
 .nav-list {
   display: flex;
   justify-content: space-evenly;
