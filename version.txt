@@ -101,3 +101,7 @@
   added missing letter
 0.28
   added ukrainian pages and language
+0.28a
+  centered header text
+  language choice was adaptized
+  minor text changes

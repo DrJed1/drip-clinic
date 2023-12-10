@@ -84,7 +84,8 @@ header {
   margin-top: 5px;
 }
 .nav-lang{
-  font-size:1.1rem;
+  font-size:1rem;
+  padding:0 3rem;
 }
 .nav-list {
   display: flex;
@@ -204,6 +205,10 @@ header {
     bottom: -6px;
     width: 100%;
   }
+  .nav-lang{
+    font-size: 0.7rem;
+    padding:0.2rem;
+  }
   header.active {
     height: 40vh;
   }
@@ -228,14 +233,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 5em;
 }
 .hero-text h1 {
   color: white;
   font-weight: 400;
+  font-weight: bold;
 }
 .hero-text h2 {
-  margin-top: 2em;
+  margin-top: 1em;
   color: whitesmoke;
   font-weight: 300;
   font-size: 1em;
