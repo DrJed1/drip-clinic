@@ -105,3 +105,5 @@
   centered header text
   language choice was adaptized
   minor text changes
+0.28b
+  minor text changes
