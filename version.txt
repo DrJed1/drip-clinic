@@ -107,3 +107,5 @@
   minor text changes
 0.28b
   minor text changes
+0.28c
+  adress+map has been changed
