@@ -109,3 +109,6 @@
   minor text changes
 0.28c
   adress+map has been changed
+0.28d
+  added city zaporizha
+  fixed language switch bug
