@@ -112,3 +112,5 @@
 0.28d
   added city zaporizha
   fixed language switch bug
+0.28e
+  inst added
