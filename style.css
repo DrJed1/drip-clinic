@@ -380,13 +380,14 @@ main {
   display: flex;
   padding-bottom: 2em;
 }
-.clinic-description h2 {
+.clinic-description h2, .clinic-description h1 {
   padding: 1em 0;
   font-weight: 500;
   display: inline-block;
   position: relative;
+  font-size: 23px;
 }
-.clinic-description h2::after {
+.clinic-description h2::after, .clinic-description h1::after {
   content: "";
   position: absolute;
   width: 100%;
