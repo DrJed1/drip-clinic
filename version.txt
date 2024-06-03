@@ -130,3 +130,5 @@
 0.29a
   Добавил robot.txt
   Исправил языки в ua версии
+0.29b
+  fixed description
