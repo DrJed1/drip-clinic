@@ -132,3 +132,5 @@
   Исправил языки в ua версии
 0.29b
   fixed description
+0.29c
+  .htaccess created
