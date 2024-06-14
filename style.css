@@ -374,7 +374,8 @@ main {
 /* О клинике */
 
 .about-clinic {
-  height: 40vh;
+  /*height: 40vh;*/
+  /*height: 209vh;*/
   max-width: 70%;
   margin: auto;
   display: flex;
@@ -403,7 +404,8 @@ main {
 .clinic-img {
   width: 165em;
   display: flex;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
+  align-items: center;
   padding: 1em;
 }
 .clinic-img img {
