@@ -134,3 +134,5 @@
   fixed description
 0.29c
   .htaccess created
+0.29d
+  Добавил Города

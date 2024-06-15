@@ -210,7 +210,7 @@ header {
     padding:0.2rem;
   }
   header.active {
-    height: 40vh;
+    height: 47.5vh;
   }
   .services:active .dropdown {
     display: block;
