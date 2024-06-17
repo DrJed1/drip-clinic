@@ -116,7 +116,7 @@ header {
 .nav-link:hover:after {
   width: 100%;
 }
-.dropdown {
+.dropdown, .dropdown-cities {
   position: absolute;
   display: none;
   width: 18em;
@@ -126,16 +126,19 @@ header {
   top: 45px;
   text-align: center;
 }
-.dropdown li {
+.dropdown-cities{ 
+  left:-225px;
+}
+.dropdown li, .dropdown-cities li {
   margin-top: 1em;
 }
-.dropdown li a {
+.dropdown li a, .dropdown-cities li a {
   transition: 0.3s ease-in;
 }
-.dropdown li a:hover {
+.dropdown li a:hover, .dropdown-cities li a:hover {
   color: grey;
 }
-.services:hover .dropdown {
+.services:hover .dropdown, .services:hover .dropdown-cities {
   display: block;
 }
 .hamburger {
@@ -197,6 +200,12 @@ header {
     padding: 0.5em 0.5em;
     border: 1px solid grey;
     top: -40px;
+  }
+  .dropdown-cities{
+    padding: 0.5em 0.5em;
+    border: 1px solid grey;
+    margin-left:275px;
+    top: -20px;
   }
   .nav-link {
     padding: 0;
