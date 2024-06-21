@@ -78,6 +78,21 @@
         .then((data) => {
           document.getElementById("header-placeholder").innerHTML = data;
         });
+      function initializeHamburgerMenu() {
+        const hamburger = document.querySelector(".hamburger");
+        const navList = document.querySelector(".nav-list");
+        const header = document.querySelector("header");
+
+        if (hamburger && navList && header) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navList.classList.toggle("active");
+            header.classList.toggle("active");
+          });
+        } else {
+          console.error("Hamburger menu elements not found");
+        }
+      }
     </script>
     <!-- 404 error -->
     <h1 style="height: 100vh; padding: 1em; background-color: whitesmoke">
