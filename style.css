@@ -127,7 +127,7 @@ header {
   text-align: center;
 }
 .dropdown-cities{ 
-  left:-225px;
+  left:-120px;
 }
 .dropdown li, .dropdown-cities li {
   margin-top: 1em;
@@ -195,7 +195,7 @@ header {
   }
 
   .dropdown {
-    margin-left: 80%;
+    margin-left: 90%;
     z-index: 1000;
     padding: 0.5em 0.5em;
     border: 1px solid grey;
@@ -204,8 +204,9 @@ header {
   .dropdown-cities{
     padding: 0.5em 0.5em;
     border: 1px solid grey;
-    margin-left:275px;
+    margin-left:20em;
     top: -20px;
+    width: 12em;
   }
   .nav-link {
     padding: 0;
@@ -219,7 +220,7 @@ header {
     padding:0.2rem;
   }
   header.active {
-    height: 47.5vh;
+    height: 57.5vh;
   }
   .services:active .dropdown {
     display: block;

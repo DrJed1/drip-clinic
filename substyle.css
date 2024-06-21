@@ -110,3 +110,84 @@
     max-width: 100%;
   }
 }
+/* БЛОГ */
+/* Н1 для выбора статей для блога */
+.blog-name{
+  max-width: 70%;
+  margin: auto;
+}
+.blog-name h1{
+  padding: 1em 0;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  font-size: 23px;
+}
+.blog-name h1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 18px;
+  border-radius: 10px;
+  background-color: #1d5d9b;
+  left: 0px;
+}
+/* Грид для списка статей для блога */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  max-width: 70%;
+  margin: auto;
+  padding: 1em 0;
+}
+.grid-item {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding:0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: #333;
+}
+.grid-item img{
+  object-fit:cover;
+  width:21em;
+  height: 12.5em;
+  border-radius:8px 8px 0px 0px;
+}
+.grid-item h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5em;
+}
+.grid-item:hover {
+  transform: scale(1.001);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.blog-page-selection{
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+  gap:1em;
+}
+.blog-page-selection a{
+  border: 1px solid grey;
+  padding:1em;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 90%;
+      margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+}
