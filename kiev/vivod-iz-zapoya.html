@@ -71,49 +71,14 @@
       </p>
     </div>
     <!-- Хедер -->
-
-    <header>
-      <nav class="nav-menu">
-        <a href="/kiev/" class="nav-logo"
-          ><img src="/img/logo3.png" alt="logo"
-        /></a>
-        <div class="social">
-          <a href="t.me/umbrellaplus"
-            ><img src="/img/icons/telegram.png" class="teleg" alt="telegram"
-          /></a>
-          <a href="viber://add?number=380500216957"
-            ><img src="/img/icons/viber.png" class="viber" alt="viber"
-          /></a>
-          <a href="inst-link.com"
-            ><img src="/img/icons/instagram.png" class="inst" alt="instagram"
-          /></a>
-        </div>
-        <ul class="nav-list">
-          <li><a class="nav-link" href="/kiev/">Главная</a></li>
-          <li class="services">
-            <a class="nav-link" href="javascript:;">Услуги</a>
-            <ul class="dropdown">
-              <li>
-                <a href="kapelnitsya-ot-alc"
-                  >Капельница от алкогольной интоксикации</a
-                >
-              </li>
-              <li><a href="kodirovanie-ot-alc">Кодирование от алколизма</a></li>
-              <li>
-                <a href="vivod-iz-zapoya">Вывод из запоя на дому</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="contacts">Контакты</a></li>
-          <li><a class="nav-link" href="about-us">О нас</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span><span class="bar"></span
-          ><span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-
+    <div id="header-placeholder"></div>
+    <script>
+      fetch("/page-elements/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
     <!-- Хиро -->
 
     <main>
@@ -433,31 +398,14 @@
     </div>
 
     <!-- Футер -->
-
-    <div class="footer">
-      <div class="footer-logo"><img src="/img/logo3bw.png" alt="logo" /></div>
-      <div class="footer-services">
-        <ul>
-          <li>
-            <span style="font-size: 1.3rem; font-weight: 500; color: white"
-              >Услуги</span
-            >
-          </li>
-          <li>
-            <a href="kapelnitsya-ot-alc"
-              >Капельница от алкогольной интоксикации</a
-            >
-          </li>
-          <li>
-            <a href="kodirovanie-ot-alc">Кодирование от алкоголизма</a>
-          </li>
-          <li><a href="vivod-iz-zapoya">Вывод из запоя</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Год -->
-    <div class="year"><p>2013-2023 Одесса. All right reserved</p></div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/page-elements/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
 <script src="/script.js"></script>
