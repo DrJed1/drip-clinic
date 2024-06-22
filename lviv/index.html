@@ -419,7 +419,7 @@
     <div id="footer-placeholder"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("page-elements/header.html")
+        fetch("/page-elements/header.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header-placeholder").innerHTML = data;
@@ -430,6 +430,7 @@
         const hamburger = document.querySelector(".hamburger");
         const navList = document.querySelector(".nav-list");
         const header = document.querySelector("header");
+
         if (hamburger && navList && header) {
           hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
