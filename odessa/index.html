@@ -101,7 +101,7 @@
     <main>
       <div class="hero-text">
         <div>
-          <h1>Лечение алкогольной зависимости<br />во Одессе</h1>
+          <h1>Лечение алкогольной зависимости<br />в Одессе</h1>
         </div>
         <div>
           <h2>
@@ -239,17 +239,17 @@
           <p>Основатель клиники. Врач нарколог - стаж работы 5 лет.</p>
         </div>
         <div class="doctor-block">
-          <img src="/img/doc2.jpg" alt="team-person2" />
+          <img src="/img/doc2.webp" alt="team-person2" />
           <h4>Владислав Алексеевич Бажора</h4>
           <p>Врач нарколог - стаж работы 4 года</p>
         </div>
         <div class="doctor-block">
-          <img src="/img/doc3.jpg" alt="team-person3" />
+          <img src="/img/doc3.webp" alt="team-person3" />
           <h4>Алексей Валерьевич Тирон</h4>
           <p>Врач нарколог - стаж работы 5 лет</p>
         </div>
         <div class="doctor-block">
-          <img src="/img/doc4.jpg" alt="team-person4" />
+          <img src="/img/doc4.webp" alt="team-person4" />
           <h4>Михаил Валентинович Вастянов</h4>
           <p>Врач нарколог - стаж работы 4 года</p>
         </div>
@@ -437,7 +437,7 @@
     <div id="footer-placeholder"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("page-elements/footer.html")
+        fetch("../page-elements/footer.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("footer-placeholder").innerHTML = data;
@@ -457,7 +457,7 @@
   document.getElementById("tg").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    let massage = "<b>Кинули заявку(Главная страница)-ЛЬВОВ:</b>";
+    let massage = "<b>Кинули заявку(Главная страница)-ОДЕССА:</b>";
     massage += document.getElementById("user_phone").value;
 
     axios

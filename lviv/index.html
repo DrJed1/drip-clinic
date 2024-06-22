@@ -72,11 +72,29 @@
     <!-- Хедер -->
     <div id="header-placeholder"></div>
     <script>
-      fetch("/page-elements/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("../page-elements/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+            initializeHamburgerMenu();
+          });
+      });
+      function initializeHamburgerMenu() {
+        const hamburger = document.querySelector(".hamburger");
+        const navList = document.querySelector(".nav-list");
+        const header = document.querySelector("header");
+
+        if (hamburger && navList && header) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navList.classList.toggle("active");
+            header.classList.toggle("active");
+          });
+        } else {
+          console.error("Hamburger menu elements not found");
+        }
+      }
     </script>
     <!-- Хиро -->
 
@@ -221,17 +239,17 @@
           <p>Основатель клиники. Врач нарколог - стаж работы 5 лет.</p>
         </div>
         <div class="doctor-block">
-          <img src="/img/doc2.jpg" alt="team-person2" />
+          <img src="/img/doc2.webp" alt="team-person2" />
           <h4>Владислав Алексеевич Бажора</h4>
           <p>Врач нарколог - стаж работы 4 года</p>
         </div>
         <div class="doctor-block">
-          <img src="/img/doc3.jpg" alt="team-person3" />
+          <img src="/img/doc3.webp" alt="team-person3" />
           <h4>Алексей Валерьевич Тирон</h4>
           <p>Врач нарколог - стаж работы 5 лет</p>
         </div>
         <div class="doctor-block">
-          <img src="/img/doc4.jpg" alt="team-person4" />
+          <img src="/img/doc4.webp" alt="team-person4" />
           <h4>Михаил Валентинович Вастянов</h4>
           <p>Врач нарколог - стаж работы 4 года</p>
         </div>
