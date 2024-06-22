@@ -199,12 +199,12 @@ header {
     z-index: 1000;
     padding: 0.5em 0.5em;
     border: 1px solid grey;
-    top: -40px;
+    top: 0px;
   }
   .dropdown-cities{
     padding: 0.5em 0.5em;
     border: 1px solid grey;
-    margin-left:20em;
+    margin-left:225%;
     top: -20px;
     width: 12em;
   }
