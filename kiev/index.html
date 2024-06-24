@@ -261,7 +261,7 @@
     <div class="reviews">
       <h2>Отзывы пациентов:</h2>
       <div class="reviews-container">
-        <div class="reviews-column1">
+        <!-- <div class="reviews-column1"> -->
           <div class="reviews-block">
             <div class="reviews-name-rate">
               <p>Анонимно</p>
@@ -329,8 +329,8 @@
               целители душ!"
             </p>
           </div>
-        </div>
-        <div class="reviews-column2">
+        <!-- </div>
+        <div class="reviews-column2"> -->
           <div class="reviews-block">
             <div class="reviews-name-rate">
               <p>Анонимно</p>
@@ -388,7 +388,7 @@
               помогли найти новый путь в моей жизни."
             </p>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
     <div class="reviews-disclaimer">
@@ -437,7 +437,7 @@
     <div id="footer-placeholder"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("../page-elements/footereader.html")
+        fetch("../page-elements/footer.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("footer-placeholder").innerHTML = data;

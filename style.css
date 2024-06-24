@@ -125,6 +125,7 @@ header {
   border-radius: 5px;
   top: 45px;
   text-align: center;
+  border: grey 1px solid
 }
 .dropdown-cities{ 
   left:-120px;
@@ -220,7 +221,7 @@ header {
     padding:0.2rem;
   }
   header.active {
-    height: 57.5vh;
+    height: 50vh;
   }
   .services:active .dropdown {
     display: block;
@@ -703,10 +704,12 @@ main {
   left: 0px;
 }
 .reviews-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1em;
+  margin: 10px auto;
 }
-.reviews-column1 {
+/* .reviews-column1 {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
@@ -716,7 +719,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-}
+} */
 .reviews-block {
   font-size: 14px;
   border: 1px solid grey;
@@ -753,7 +756,7 @@ main {
     height: auto;
   }
   .reviews-container {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
@@ -810,6 +813,7 @@ main {
 
 /* Футер */
 .footer {
+  margin-top:2em;
   height: 20vh;
   display: flex;
   justify-content: space-between;
