@@ -31,9 +31,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Крапельниця від алкогольної інтоксикації в Одесі | Umbrella+
-    </title>
+    <title>Крапельниця від алкогольної інтоксикації в Одесі | Umbrella+</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/substyle.css" />
     <!-- link to title -->
@@ -74,55 +72,32 @@
     </div>
     <!-- Хедер -->
 
-    <header>
-      <nav class="nav-menu">
-        <a href="/" class="nav-logo"><img src="/img/logo3.png" alt="logo" /></a>
-        <div class="social">
-           <a href="https://t.me/umbrellaplus"
-            ><img src="/img/icons/telegram.png" class="teleg" alt="telegram"
-          /></a>
-          <a href="viber://add?number=380500216957"
-            ><img src="/img/icons/viber.png" class="viber" alt="viber"
-          /></a>
-          <a href="https://www.instagram.com/umbrella_plus_ua"
-            ><img src="/img/icons/instagram.png" class="inst" alt="instagram"
-          /></a>
-          <p class="nav-lang">
-            <a href="/kapelnitsya-ot-alc">RU</a>|<a
-              href="/ua/kapelnitsya-ot-alc"
-              style="text-decoration: underline"
-              >UA</a
-            >
-          </p>
-        </div>
-        <ul class="nav-list">
-          <li><a class="nav-link" href="/">Головна</a></li>
-          <li class="services">
-            <a class="nav-link" href="javascript:;">Послуги</a>
-            <ul class="dropdown">
-              <li>
-                <a href="kapelnitsya-ot-alc"
-                  >Крапельниця від алкогольної інтоксикації</a
-                >
-              </li>
-              <li><a href="kodirovanie-ot-alc">Кодування від алколізму</a></li>
-              <li>
-                <a href="vivod-iz-zapoya">Виведення із запою вдома</a>
-              </li>
-              <li>
-                <a href="cinderella">Крапельниця Попелюшка</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="contacts">Контакти</a></li>
-          <li><a class="nav-link" href="about-us">Про нас</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span><span class="bar"></span
-          ><span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/page-elements/header-ua.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+            initializeHamburgerMenu();
+          });
+      });
+      function initializeHamburgerMenu() {
+        const hamburger = document.querySelector(".hamburger");
+        const navList = document.querySelector(".nav-list");
+        const header = document.querySelector("header");
+
+        if (hamburger && navList && header) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navList.classList.toggle("active");
+            header.classList.toggle("active");
+          });
+        } else {
+          console.error("Hamburger menu elements not found");
+        }
+      }
+    </script>
 
     <!-- Хиро -->
 
@@ -239,121 +214,120 @@
     <div class="reviews">
       <h2>Відгуки пацієнтів:</h2>
       <div class="reviews-container">
-        <div class="reviews-column1">
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p class="reviews-text">
-              "Постійно викликаю на допомогу хлопців коли заїжаю в Одесу на
-              відпочинок, порекомендували друзі, завжди після гулянок мене
-              спасають, рекомендую"
-            </p>
+        <!-- <div class="reviews-column1"> -->
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Выражаем благодарность клинике за оперативность и грамотный
-              подход в лечении. Заказывали нарколога на дом, провели
-              консультацюя, установить диагноз и назначили капельницу от
-              продолжительного запоя. Лечение уже дало свои результаты, и мы
-              признательны доктору за его помощь! Спасибо за профессионализм и
-              заботу!"
-            </p>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Было очень плохо после употребления, у меня возникли температура,
-              головная боль, сильная слабость и тошнота. Я заказал капельницу
-              для детоксикации организма. Владислав Алексеевич приехал всего
-              через час после звонка, прокапал капельницу, предоставил лечение и
-              дал рекомендации. Сразу почувствовалось улучшение. Окончательно я
-              пришел в себя после сна на утро. Это действительно помогает, и я
-              даже не мог предположить, что результат будет настолько хорошим.
-              Обратился за помощью к врачам центра "Амбрелла", потому что
-              надежды на то, что сам справлюсь, уже не оставалось. Огромное
-              спасибо врачам за их помощь и заботу!"
-            </p>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Я злоупотреблял спиртным около месяца, но сам этого не замечал.
-              Недавно мой организм дал сбой, и я решил пройти курс лечения и
-              прочистить свой организм. Обратился к наркологу, и он назначил мне
-              восстановительную терапию, сделали кардиограмму. Все прошло быстро
-              и эффективно, и я оценил профессиональный подход, который
-              предоставили мне в центре Амбрелла"
-            </p>
-          </div>
+          <p class="reviews-text">
+            "Постійно викликаю на допомогу хлопців коли заїжаю в Одесу на
+            відпочинок, порекомендували друзі, завжди після гулянок мене
+            спасають, рекомендую"
+          </p>
         </div>
-        <div class="reviews-column2">
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Спасибо за лечение моего сына! Максимально эффективно и
-              оперативно была оказана помощь"
-            </p>
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Большое спасибо за своевременную и квалифицированную помощь! Нам
-              потребовалась помощь на дому для моего мужа, и врач приехал очень
-              быстро. С его помощью муж пришел в чувства и почувствовал
-              облегчение. Мы благодарны врачу за его профессионализм и заботу о
-              нас. Это дало нам уверенность, что мы находимся в надежных руках.
-              Огромное спасибо за вашу поддержку!"
-            </p>
+          <p>
+            "Выражаем благодарность клинике за оперативность и грамотный подход
+            в лечении. Заказывали нарколога на дом, провели консультацюя,
+            установить диагноз и назначили капельницу от продолжительного запоя.
+            Лечение уже дало свои результаты, и мы признательны доктору за его
+            помощь! Спасибо за профессионализм и заботу!"
+          </p>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Выражаю искреннюю благодарность за лечение, заботу и поддержку
-              врачу Михаилу Валентиновичу. В выходной день мне понадобилась
-              детоксикация после употребления алкоголя, и я вызвал врача. Весь
-              процесс прошел оперативно, и я хочу отметить, что врач прибыл на
-              адрес очень быстро. Капельница была поставлена профессионально и
-              без проблем. Я полностью удовлетворен результатами процедуры.
-              Благодарю за качественную помощь!"
-            </p>
+          <p>
+            "Было очень плохо после употребления, у меня возникли температура,
+            головная боль, сильная слабость и тошнота. Я заказал капельницу для
+            детоксикации организма. Владислав Алексеевич приехал всего через час
+            после звонка, прокапал капельницу, предоставил лечение и дал
+            рекомендации. Сразу почувствовалось улучшение. Окончательно я пришел
+            в себя после сна на утро. Это действительно помогает, и я даже не
+            мог предположить, что результат будет настолько хорошим. Обратился
+            за помощью к врачам центра "Амбрелла", потому что надежды на то, что
+            сам справлюсь, уже не оставалось. Огромное спасибо врачам за их
+            помощь и заботу!"
+          </p>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
           </div>
-          <div class="reviews-block">
-            <div class="reviews-name-rate">
-              <p>Анонімно</p>
-              <img src="/img/rating.png" alt="" />
-            </div>
-            <p>
-              "Опытный врач, полная Анонімность. Цены на услуги были адекватны
-              для предоставляемой помощи. Врач прибыл довольно быстро, и после
-              проведения капельницы, мое здоровье заметно улучшилось. Весь
-              процесс был организован оперативно и с заботой о пациенте. Врачи
-              работали с преданностью и профессионализмом!"
-            </p>
+          <p>
+            "Я злоупотреблял спиртным около месяца, но сам этого не замечал.
+            Недавно мой организм дал сбой, и я решил пройти курс лечения и
+            прочистить свой организм. Обратился к наркологу, и он назначил мне
+            восстановительную терапию, сделали кардиограмму. Все прошло быстро и
+            эффективно, и я оценил профессиональный подход, который предоставили
+            мне в центре Амбрелла"
+          </p>
+        </div>
+        <!-- </div>
+        <div class="reviews-column2"> -->
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
           </div>
+          <p>
+            "Спасибо за лечение моего сына! Максимально эффективно и оперативно
+            была оказана помощь"
+          </p>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
+          </div>
+          <p>
+            "Большое спасибо за своевременную и квалифицированную помощь! Нам
+            потребовалась помощь на дому для моего мужа, и врач приехал очень
+            быстро. С его помощью муж пришел в чувства и почувствовал
+            облегчение. Мы благодарны врачу за его профессионализм и заботу о
+            нас. Это дало нам уверенность, что мы находимся в надежных руках.
+            Огромное спасибо за вашу поддержку!"
+          </p>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
+          </div>
+          <p>
+            "Выражаю искреннюю благодарность за лечение, заботу и поддержку
+            врачу Михаилу Валентиновичу. В выходной день мне понадобилась
+            детоксикация после употребления алкоголя, и я вызвал врача. Весь
+            процесс прошел оперативно, и я хочу отметить, что врач прибыл на
+            адрес очень быстро. Капельница была поставлена профессионально и без
+            проблем. Я полностью удовлетворен результатами процедуры. Благодарю
+            за качественную помощь!"
+          </p>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-name-rate">
+            <p>Анонімно</p>
+            <img src="/img/rating.png" alt="" />
+          </div>
+          <p>
+            "Опытный врач, полная Анонімность. Цены на услуги были адекватны для
+            предоставляемой помощи. Врач прибыл довольно быстро, и после
+            проведения капельницы, мое здоровье заметно улучшилось. Весь процесс
+            был организован оперативно и с заботой о пациенте. Врачи работали с
+            преданностью и профессионализмом!"
+          </p>
         </div>
       </div>
     </div>
+    <!-- </div> -->
     <div class="reviews-disclaimer">
       <p>Відгук можна залишити після надання вам послуги.</p>
     </div>

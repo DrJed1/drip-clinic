@@ -35,6 +35,7 @@
     <meta name="description" content="Найкращий центр лікування алкогольної та наркоманної залежності в Одесі. Допомога за доступними цінами. Телефон: +380(50) 021 69 57"/>
     <title>Umbrella+ | Безпечна наркологія</title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/substyle.css">
     <!-- link to title -->
     <link rel="icon" href="/img/title-icon.png" type="image/x-icon" />
     <script type='application/ld+json'> 
@@ -96,53 +97,32 @@
     </div>
     <!-- Хедер -->
 
-    <header>
-      <nav class="nav-menu">
-        <a href="/" class="nav-logo"><img src="/img/logo3.png" alt="logo" /></a>
-        <div class="social">
-          <a href="https://t.me/umbrellaplus"
-            ><img src="/img/icons/telegram.png" class="teleg" alt="telegram"
-          /></a>
-          <a href="viber://add?number=380500216957"
-            ><img src="/img/icons/viber.png" class="viber" alt="viber"
-          /></a>
-          <a href="https://www.instagram.com/umbrella_plus_ua"
-            ><img src="/img/icons/instagram.png" class="inst" alt="instagram"
-          /></a>
-          <p class="nav-lang">
-            <a href="/">RU</a>|<a href="/ua/" style="text-decoration: underline"
-              >UA</a
-            >
-          </p>
-        </div>
-        <ul class="nav-list">
-          <li><a class="nav-link" href="/">Головна</a></li>
-          <li class="services">
-            <a class="nav-link" href="javascript:;">Послуги</a>
-            <ul class="dropdown">
-              <li>
-                <a href="kapelnitsya-ot-alc"
-                  >Крапельниця від алкогольної інтоксикації</a
-                >
-              </li>
-              <li><a href="kodirovanie-ot-alc">Кодування від алколізму</a></li>
-              <li>
-                <a href="vivod-iz-zapoya">Виведення із запою вдома</a>
-              </li>
-              <li>
-                <a href="cinderella">Крапельниця Попелюшка</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="contacts">Контакти</a></li>
-          <li><a class="nav-link" href="about-us">Про нас</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span><span class="bar"></span
-          ><span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/page-elements/header-ua.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+            initializeHamburgerMenu();
+          });
+      });
+      function initializeHamburgerMenu() {
+        const hamburger = document.querySelector(".hamburger");
+        const navList = document.querySelector(".nav-list");
+        const header = document.querySelector("header");
+
+        if (hamburger && navList && header) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navList.classList.toggle("active");
+            header.classList.toggle("active");
+          });
+        } else {
+          console.error("Hamburger menu elements not found");
+        }
+      }
+    </script>
 
     <!-- Хиро -->
 
@@ -308,7 +288,7 @@
     <div class="reviews">
       <h2>Відгуки пацієнтів:</h2>
       <div class="reviews-container">
-        <div class="reviews-column1">
+        <!-- <div class="reviews-column1"> -->
           <div class="reviews-block">
             <div class="reviews-name-rate">
               <p>Анонимно</p>
@@ -376,8 +356,8 @@
               целители душ!"
             </p>
           </div>
-        </div>
-        <div class="reviews-column2">
+        <!-- </div>
+        <div class="reviews-column2"> -->
           <div class="reviews-block">
             <div class="reviews-name-rate">
               <p>Анонимно</p>
@@ -437,7 +417,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
     <div class="reviews-disclaimer">
       <p>Відгук можна залишити після надання вам послуги.</p>
     </div>

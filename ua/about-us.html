@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <!-- Google Tag Manager -->
     <script>
@@ -34,6 +34,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дізнатись більше про нас | Umbrella</title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/substyle.css" />
     <!-- link to title -->
     <link rel="icon" href="/img/title-icon.png" type="image/x-icon" />
   </head>
@@ -70,55 +71,33 @@
       </p>
     </div>
     <!-- Хедер -->
+    <div id="header-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/page-elements/header-ua.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+            initializeHamburgerMenu();
+          });
+      });
+      function initializeHamburgerMenu() {
+        const hamburger = document.querySelector(".hamburger");
+        const navList = document.querySelector(".nav-list");
+        const header = document.querySelector("header");
 
-    <header>
-      <nav class="nav-menu">
-        <a href="/" class="nav-logo"><img src="/img/logo3.png" alt="logo" /></a>
-        <div class="social">
-           <a href="https://t.me/umbrellaplus"
-            ><img src="/img/icons/telegram.png" class="teleg" alt="telegram"
-          /></a>
-          <a href="viber://add?number=380500216957"
-            ><img src="/img/icons/viber.png" class="viber" alt="viber"
-          /></a>
-          <a href="https://www.instagram.com/umbrella_plus_ua"
-            ><img src="/img/icons/instagram.png" class="inst" alt="instagram"
-          /></a>
-          <p class="nav-lang">
-            <a href="/about-us">RU</a>|<a
-              href="/ua/index"
-            ></a style="text-decoration:underline";
-            ><a href="/ua/about-us" style="text-decoration: underline;">UA</a>
-          </p>
-        </div>
-        <ul class="nav-list">
-          <li><a class="nav-link" href="/">Головна</a></li>
-          <li class="services">
-            <a class="nav-link" href="javascript:;">Послуги</a>
-            <ul class="dropdown">
-              <li>
-                <a href="kapelnitsya-ot-alc"
-                  >Крапельниця від алкогольної інтоксикації</a
-                >
-              </li>
-              <li><a href="kodirovanie-ot-alc">Кодування від алколізму</a></li>
-              <li>
-                <a href="vivod-iz-zapoya">Виведення із запою вдома</a>
-              </li>
-              <li>
-                <a href="cinderella">Крапельниця Попелюшка</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="contacts">Контакти</a></li>
-          <li><a class="nav-link" href="about-us">Про нас</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span><span class="bar"></span
-          ><span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+        if (hamburger && navList && header) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navList.classList.toggle("active");
+            header.classList.toggle("active");
+          });
+        } else {
+          console.error("Hamburger menu elements not found");
+        }
+      }
+    </script>
+
     <!-- О нашей задаче -->
 
     <div class="about-clinic">
@@ -140,6 +119,97 @@
         <img src="/img/about1.1.webp" alt="clinic-pic" />
       </div>
     </div>
+
+    <!-- Біографія лікарів (СТИЛЬ В SUBSTYLE.CSS)-->
+
+    <div class="doctors">
+      <h2>Наші спеціалісти</h2>
+      <div
+        class="doctors-container"
+        style="
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+        "
+      >
+        <div class="doctor-block-about">
+          <img src="/img/doc1.webp" alt="team-person1" />
+          <p>
+            <b>Станіслав В'ячеславович Кресюн</b><br /><br />
+            Засновник нашої клініки, Станіслав В'ячеславович Кресюн, має
+            п'ятирічний досвід роботи в області наркології. Випускник одного з
+            найкращих медичних університетів країни, пройшов спеціалізацію з
+            лікування алкогольної та наркотичної залежності і присвятив свою
+            кар'єру допомозі людям, які страждають від цих проблем.<br />Заснувавши
+            клініку, Станіслав В'ячеславович прагнув об'єднати високоякісні
+            медичні методи та турботу про кожного пацієнта. Під його
+            керівництвом клініка застосовує інноваційні підходи до лікування та
+            реабілітації, гарантуючи індивідуальний підхід та підтримку на всіх
+            етапах одужання. <br />Його головна мета - надати пацієнтам шанс на
+            нове, здорове і вільне від залежності життя.
+          </p>
+        </div>
+        <div class="doctor-block-about">
+          <img src="/img/doc2.webp" alt="team-person2" />
+          <p>
+            <b>Владислав Олексійович Бажора</b><br /><br />Лікар-нарколог нашої
+            клініки вже чотири роки успішно допомагає пацієнтам справлятися з
+            алкогольної та наркотичною залежністю. Закінчив провідний медичний
+            університет країни і пройшов поглиблену спеціалізацію з наркології.
+            Владислав Олексійович відомий своїм чуйним і уважним підходом до
+            кожного пацієнта. Він використовує сучасні медичні методики у
+            поєднанні з індивідуальними програмами реабілітації, що дозволяє
+            досягти стійких результатів і допомогти людям повернутися до
+            нормального життя. Активно бере участь у професійних спільнотах та
+            наукових конференціях, Владислав Олексійович постійно вдосконалює
+            свої знання і ділиться досвідом з колегами. Його місія - надати
+            всебічну підтримку пацієнтам, допомогти їм подолати залежність і
+            почати нове життя.
+          </p>
+        </div>
+        <div class="doctor-block-about">
+          <img src="/img/doc3.webp" alt="team-person3" />
+          <p>
+            <b>Олексій Валерійович Тирон</b><br /><br />Лікар-нарколог присвятив
+            п'ять років своєї професійної діяльності лікуванню алкогольної та
+            наркотичної залежності. Олексій Валерійович закінчив один з
+            найпрестижніших медичних університетів країни і пройшов
+            спеціалізовану підготовку з наркології. Олексій Валерійович
+            застосовує комплексний підхід до лікування залежностей, поєднуючи
+            новітні медичні технології з психотерапевтичною підтримкою. Він
+            приділяє особливу увагу не тільки фізичному стану пацієнтів, але й
+            їх психологічному благополуччю, що значно підвищує ефективність
+            лікування. Крім своєї лікарської практики, Олексій Валерійович
+            активно займається навчанням молодих спеціалістів і проводить
+            тренінги та семінари. Його мета - не тільки лікувати, але й
+            поширювати знання про сучасні методи боротьби із залежністю, щоб
+            якнайбільше людей могли повернутися до здорового та повноцінного
+            життя.
+          </p>
+        </div>
+        <div class="doctor-block-about">
+          <img src="/img/doc4.webp" alt="team-person4" />
+          <p>
+            <b>Михайло Валентинович Вастянов</b><br /><br />Лікар-нарколог
+            клініки має шестирічний досвід у лікуванні алкогольної та
+            наркотичної залежності. Після закінчення одного з провідних медичних
+            університетів країни та проходження спеціалізації з наркології,
+            Михайло Валентинович зосередив свої зусилля на розробці інноваційних
+            методик лікування. Михайло Валентинович відомий своєю увагою до
+            деталей і глибокою відданістю кожному пацієнту. Його унікальний
+            підхід включає комплексні програми, що поєднують медичне лікування,
+            психологічну підтримку та соціальну реабілітацію. Завдяки такому
+            підходу, пацієнти клініки отримують не тільки лікування, але й
+            можливість повністю відновити своє життя. Крім того, Михайло
+            Валентинович активно займається науковими дослідженнями у галузі
+            наркології, публікує результати своїх робіт і ділиться досвідом на
+            міжнародних конференціях. Його головна мета - не тільки лікувати,
+            але й створювати умови для стійкого одужання, допомагаючи пацієнтам
+            знайти впевненість у майбутньому і почати нове життя без залежності.
+          </p>
+        </div>
+      </div>
+    </div>
+    ```
     <!-- Футер -->
 
     <div class="footer">
