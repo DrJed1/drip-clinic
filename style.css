@@ -196,7 +196,7 @@ header {
   }
 
   .dropdown {
-    margin-left: 90%;
+    margin-left: 40%;
     z-index: 1000;
     padding: 0.5em 0.5em;
     border: 1px solid grey;
@@ -205,9 +205,10 @@ header {
   .dropdown-cities{
     padding: 0.5em 0.5em;
     border: 1px solid grey;
-    margin-left:225%;
+    margin-left:125%;
     top: -20px;
     width: 12em;
+    z-index: 1000;
   }
   .nav-link {
     padding: 0;
