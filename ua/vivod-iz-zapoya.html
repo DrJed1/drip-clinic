@@ -416,31 +416,17 @@
     </div>
 
     <!-- Футер -->
-
-    <div class="footer">
-      <div class="footer-logo"><img src="/img/logo3bw.png" alt="logo" /></div>
-      <div class="footer-services">
-        <ul>
-          <li>
-            <span style="font-size: 1.3rem; font-weight: 500; color: white"
-              >Услуги</span
-            >
-          </li>
-          <li>
-            <a href="kapelnitsya-ot-alc"
-              >Крапельниця від алкогольної інтоксикації</a
-            >
-          </li>
-          <li>
-            <a href="kodirovanie-ot-alc">Кодування від алкоголізму</a>
-          </li>
-          <li><a href="vivod-iz-zapoya">Виведення із запою</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Год -->
-    <div class="year"><p>2013-2023 Одеса. All right reserved</p></div>
+    <div id="footer-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("../page-elements/footer-ua.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+            initializeHamburgerMenu();
+          });
+      });
+    </script>
   </body>
 </html>
 <script src="/script.js"></script>

@@ -814,7 +814,7 @@ main {
 /* Футер */
 .footer {
   margin-top:2em;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   justify-content: space-between;
   background-color: var(--blue);
