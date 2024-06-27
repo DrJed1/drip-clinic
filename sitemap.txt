@@ -5,6 +5,7 @@ https://umbrella-plus.com.ua/pricelist
 https://umbrella-plus.com.ua/kapelnitsya-ot-alc
 https://umbrella-plus.com.ua/kodirovanie-ot-alc
 https://umbrella-plus.com.ua/vivod-iz-zapoya
+https://umbrella-plus.com.ua/narc-pomoshch
 https://umbrella-plus.com.ua/ua/
 https://umbrella-plus.com.ua/ua/about-us
 https://umbrella-plus.com.ua/ua/contacts
@@ -22,3 +23,5 @@ https://umbrella-plus.com.ua/lviv/
 https://umbrella-plus.com.ua/lviv/ua
 https://umbrella-plus.com.ua/odessa/
 https://umbrella-plus.com.ua/odessa/ua
+https://umbrella-plus.com.ua/zaporozie
+https://umbrella-plus.com.ua/zaporozie/ua
