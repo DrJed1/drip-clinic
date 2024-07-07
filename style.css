@@ -30,8 +30,11 @@
   }
 }
 /* Прехедер */
+.preheader-space{
+  visibility: none;
+}
 .preheader {
-  height: 7vh;
+  height: 10vh;
   background-color: var(--blue);
   display: flex;
   justify-content: space-evenly;
@@ -39,6 +42,10 @@
 }
 .preheader-hours{
   color:white;
+}
+.preheader-numbers{
+  display: flex;
+  gap:2em;
 }
 .preheader p img {
   width: 25px;
@@ -58,11 +65,20 @@
   padding: 0.5em;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .preheader-space{
+    visibility: visible;
+    margin-top: 10vh;
+  }
+  .preheader-numbers{
+    flex-direction: column;
+    gap:0.2em;
+  }
   .preheader {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 999;
+    width: 100%;
   }
   .preheader-hours {
     display: none;
@@ -164,7 +180,7 @@ header {
   margin-left: 0.5em;
   opacity: 70%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav-menu {
     justify-content: space-between;
   }
@@ -188,7 +204,7 @@ header {
   }
   .nav-list.active {
     left: 0%;
-    top: 15%;
+    top: 18%;
     gap: 0.5em;
     font-size: 1rem;
     font-weight: 500;
@@ -299,7 +315,7 @@ main {
   height: 100%;
   border-radius: 20px 20px 20px 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   main {
     flex-direction: column;
     height: auto;
@@ -369,7 +385,7 @@ main {
   text-align: center;
   font-weight: 600;
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .benefits {
     height: auto;
     max-width: 100%;
@@ -763,7 +779,7 @@ main {
 
 /* Контакты */
 .contacts {
-  height: 70vh;
+  height: auto;
   max-width: 70%;
   margin: auto;
   border: 1px solid grey;
@@ -798,7 +814,7 @@ main {
 .contacts-numbers p {
   text-align: left;
 }
-@media (max-width: 769px) {
+@media (max-width: 1200px) {
   .contacts {
     height: auto;
     max-width: 95%;

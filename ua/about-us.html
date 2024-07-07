@@ -56,20 +56,19 @@
       /></a>
     </div>
     <!-- Прехедер -->
-    <div class="preheader">
-      <p class="preheader-hours">
-        Безкоштовна консультація, працюємо цілодобово 24/7
-      </p>
-      <p>
-        <a href="tel:+380500216957"
-          ><img src="/img/icons/telephone.png" alt="phonenum" />+380(50) 021 69
-          57</a
-        >
-      </p>
-      <p>
-        <a href=""><button type="button">Перезвонити вам</button></a>
-      </p>
-    </div>
+     
+    <div class="preheader-space"></div>
+    <div id="preheader-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/page-elements/preheader-ua.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("preheader-placeholder").innerHTML = data;
+          });
+      });
+    </script>
+
     <!-- Хедер -->
     <div id="header-placeholder"></div>
     <script>
@@ -209,7 +208,21 @@
         </div>
       </div>
     </div>
-    ```
+    <!-- Контакти -->
+
+    
+    <div id="contacts-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/page-elements/contacts-ua.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("contacts-placeholder").innerHTML = data;
+          });
+      });
+    </script>
+
+
     <!-- Футер -->
     <div id="footer-placeholder"></div>
     <script>

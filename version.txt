@@ -172,3 +172,9 @@
  "Вывод из запоя" - обновление страницы
  0.30aa
  test for sticky in index
+ 0.30ab
+ preheader "fixed" test in index
+ 0.31
+ now being more responsive
+ additional phonenumber added to preheader and contacts
+ contacts and preheader now scripted
