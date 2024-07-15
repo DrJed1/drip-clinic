@@ -15,9 +15,9 @@
 /* Леветирующий телефон */
 .sticky-phone {
   margin-top: -4.5em;
-  top: 85%;
+  top: 95%;
   margin-left: 95%;
-  position: sticky;
+  position: fixed;
   cursor: pointer;
 }
 .sticky-phone a img {

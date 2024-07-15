@@ -51,11 +51,16 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Летающая трубка -->
-    <div class="sticky-phone">
-      <a href="tel:+380500216957"
-        ><img src="/img/icons/sticky-telephone.png" alt="sticky-phone"
-      /></a>
-    </div>
+    <div id="fly-phone-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/page-elements/fly-phone.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("fly-phone-placeholder").innerHTML = data;
+          });
+      });
+    </script>
     <!-- Прехедер -->
 
     <div class="preheader">
