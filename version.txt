@@ -178,7 +178,9 @@
  now being more responsive
  additional phonenumber added to preheader and contacts
  contacts and preheader now scripted
- 0.31a
- narc-pomosh - add footer
  0.31b
  now +380973697665 main number
+ 0.31a
+ narc-pomosh - add footer
+ 0.31c
+ vivod iz zapoya optimized
