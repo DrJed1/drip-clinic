@@ -187,6 +187,9 @@
  0.31d
  dobavil pivnoi alkoholism
  0.31e
- dobail genskiy alkoholism
+ dobavil genskiy alkoholism
  0.31g
  dobavil kodirovanie po dolgenko
+ 0.31h
+ dobavil kodirovanie ukolom
+ dobavil poshivka ot alc
