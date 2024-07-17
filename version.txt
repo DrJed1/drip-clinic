@@ -184,3 +184,5 @@
  narc-pomosh - add footer
  0.31c
  vivod iz zapoya optimized
+ 0.31d
+ dobavil pivnoi alkoholism
