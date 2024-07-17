@@ -188,3 +188,5 @@
  dobavil pivnoi alkoholism
  0.31e
  dobail genskiy alkoholism
+ 0.31g
+ dobavil kodirovanie po dolgenko
