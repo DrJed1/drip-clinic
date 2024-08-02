@@ -15,11 +15,13 @@
 .q {
   max-width: 60%;
   margin: auto;
+  z-index:10;
 }
 .q h2 {
   position: relative;
   display: inline-block;
   padding: 1em 0;
+  z-index:10
 }
 .q h2:after {
   content: "";

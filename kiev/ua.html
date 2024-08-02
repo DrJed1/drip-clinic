@@ -125,12 +125,19 @@
               minlength="13"
               maxlength="13"
             /><button type="submit">Безкоштовна консультація</button>
-            <div id="success">Повідомлення відправлено!</div>
+            <div id="success">Повідомлення відправлено! Передзвонимо Вам як можно скоріше!</div>
           </div>
         </form>
-        <p class="main-cities">
-          Працюємо в Одесі, Києві, Львові, Харкові, Дніпрі
-        </p>
+        <div id="cities-placeholder"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch("/page-elements/main-cities-ua.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("cities-placeholder").innerHTML = data;
+              });
+          });
+        </script>
       </div>
       <div class="hero-img">
         <img src="/img/hero-index.webp" alt="alcoholic" />

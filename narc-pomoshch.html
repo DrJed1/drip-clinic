@@ -34,7 +34,7 @@
     <title>Наркологическая помощь | Umbrella+</title>
     <meta
       name="description"
-      content="Капельница от алкогольной интоксикации на дому – эффективное и безопасное восстановление под присмотром специалистов. Быстрое улучшение самочувствия."
+      content="Еффективная неотложная наркологическая помощь по доступной цене"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="substyle.css" />
@@ -130,12 +130,19 @@
               minlength="13"
               maxlength="13"
             /><button type="submit">Бесплатная консультация</button>
-            <div id="success">Сообщение отравлено!</div>
+            <div id="success">Сообщение отправлено! Перезвоним вам как можно скорее!</div>
           </div>
         </form>
-        <p class="main-cities">
-          Работаем в Одессе, Киеве, Львове, Харькове, Днепре, Запорожье
-        </p>
+        <div id="cities-placeholder"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch("/page-elements/main-cities.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("cities-placeholder").innerHTML = data;
+              });
+          });
+        </script>
       </div>
       <div class="hero-img">
         <img src="img/lomka-ot-narkotikov.jpg" alt="lomka-ot-narkotikov" />
@@ -222,7 +229,7 @@
         обеспечивает социальную поддержку друг друга и групповую наркотическую
         психотерапию. Наркологическая помощь в лечении наркомании это реальный
         шанс на полное выздоровление и возвращение пациента к трезвой жизни.
-        Связаться с нами вы можете по нашей горячей линии 050-021-69-57 Наша
+        Связаться с нами вы можете по нашей горячей линии. Наша
         программа частная и АНОНИМНАЯ в лечении наркомании и алкоголизма,
         поэтому в интересах пациента мы передаем документацию в реестры так как
         занимаемся частной практикой. Мы ждем вашего решение и в любой момент
@@ -384,7 +391,7 @@
           <label for="second">Где вы находитесь?<span>></span></label>
           <input type="radio" name="faq-accordion" id="second" />
           <div class="faq-content">
-            <p>В таких городах как Одесса, Киев, Львов, Харьков, Днепр</p>
+            <p>Наши филиалы есть во всех больших городах Украины.</p>
           </div>
         </li>
         <li>

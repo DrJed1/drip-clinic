@@ -128,12 +128,19 @@
               minlength="13"
               maxlength="13"
             /><button type="submit">Бесплатная консультация</button>
-            <div id="success">Сообщение отравлено!</div>
+            <div id="success">Сообщение отправлено! Перезвоним вам как можно скорее!</div>
           </div>
         </form>
-        <p class="main-cities">
-          Работаем в Одессе, Киеве, Львове, Харькове, Днепре, Запорожье
-        </p>
+        <div id="cities-placeholder"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch("/page-elements/main-cities.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("cities-placeholder").innerHTML = data;
+              });
+          });
+        </script>
       </div>
       <div class="hero-img">
         <img src="/img/kodirovanie-ukolom.jpg" alt="kodirovanie-ukolom" />
@@ -354,7 +361,7 @@
           <input type="radio" name="faq-accordion" id="second" />
           <div class="faq-content">
             <p>
-              В таких городах как Одесса, Киев, Львов, Харьков, Днепр, Запорожье
+              Наши филиалы есть во всех больших городах Украины.
             </p>
           </div>
         </li>

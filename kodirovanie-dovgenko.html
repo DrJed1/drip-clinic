@@ -31,7 +31,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кодирование по Довженко | Umbrella+</title>
     <meta name="description"
-        content="Кодирование по Долженко – безопасный и анонимный метод, помогающий восстановить здоровье под присмотром квалифицированных специалистов без посещения клиники." />
+        content="Кодирование по Довженко – безопасный и анонимный метод, помогающий восстановить здоровье под присмотром квалифицированных специалистов без посещения клиники." />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="substyle.css" />
     <!-- link to title -->
@@ -101,11 +101,11 @@
         <!-- <img src="img/draft.jpg" alt="patient-in-bed" /> -->
         <div class="hero-text">
             <div>
-                <h1>Кодирование по Довженко на дому<br /></h1>
+                <h1>Кодирование по Довженко<br /></h1>
             </div>
             <div>
                 <h2>
-                    Гаранированное лечение алкоголизма на дому
+                    Гаранированное лечение алкоголизма
                 </h2>
             </div>
             <form id="tg">
@@ -113,12 +113,19 @@
                     <input type="tel" class="form-control" name="user_phone" id="user_phone" placeholder="XXXXXXXX"
                         value="+380" minlength="13" maxlength="13" /><button type="submit">Бесплатная
                         консультация</button>
-                    <div id="success">Сообщение отравлено!</div>
+                    <div id="success">Сообщение отправлено! Перезвоним вам как можно скорее!</div>
                 </div>
             </form>
-            <p class="main-cities">
-                Работаем в Одессе, Киеве, Львове, Харькове, Днепре, Запорожье
-            </p>
+            <div id="cities-placeholder"></div>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                fetch("/page-elements/main-cities.html")
+                  .then((response) => response.text())
+                  .then((data) => {
+                    document.getElementById("cities-placeholder").innerHTML = data;
+                  });
+              });
+            </script>
         </div>
         <div class="hero-img">
             <img src="/img/dovgenko-kodirovanie.jpg" alt="dovgenko-kodirovanie" />
@@ -318,7 +325,7 @@
                 <label for="second">Где вы находитесь?<span>></span></label>
                 <input type="radio" name="faq-accordion" id="second" />
                 <div class="faq-content">
-                    <p>В таких городах как Одесса, Киев, Львов, Харьков, Днепр, Запорожье</p>
+                    <p>Наши филиалы есть во всех больших городах Украины.</p>
                 </div>
             </li>
             <li>

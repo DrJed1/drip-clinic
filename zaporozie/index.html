@@ -124,13 +124,20 @@
               value="+380"
               minlength="13"
               maxlength="13"
-            /><button type="submit">Беслатная консультация</button>
-            <div id="success">Сообщение отравлено!</div>
+            /><button type="submit">Бесплатная консультация</button>
+            <div id="success">Сообщение отравлено! Перезвоним вам как можно скорее!</div>
           </div>
         </form>
-        <p class="main-cities">
-          Работаем в Одессе, Киеве, Львове, Харькове, Днепре
-        </p>
+        <div id="cities-placeholder"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch("/page-elements/main-cities.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("cities-placeholder").innerHTML = data;
+              });
+          });
+        </script>
       </div>
       <div class="hero-img">
         <img src="/img/hero-index.webp" alt="alcoholic" />

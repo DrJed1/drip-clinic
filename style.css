@@ -133,6 +133,7 @@ header {
   width: 100%;
 }
 .dropdown, .dropdown-cities {
+  z-index: 1000;
   position: absolute;
   display: none;
   width: 18em;
@@ -213,7 +214,6 @@ header {
 
   .dropdown {
     margin-left: 40%;
-    z-index: 1000;
     padding: 0.5em 0.5em;
     border: 1px solid grey;
     top: 0px;
@@ -224,7 +224,6 @@ header {
     margin-left:125%;
     top: -20px;
     width: 12em;
-    z-index: 1000;
   }
   .nav-link {
     padding: 0;
@@ -294,7 +293,7 @@ main {
   cursor: pointer;
 }
 #success {
-  color: white;
+  color: orange;
   font-weight: 600;
   padding: 0.5em;
   display: none;
@@ -303,6 +302,12 @@ main {
   margin-top: 0.5em;
   color: whitesmoke;
   font-weight: 300;
+}
+.main-approval p{
+  font-size: 0.9em;
+  font-weight: 400;
+  color: white;
+  padding: 2em 1em;
 }
 .hero-img {
   width: 29em;
@@ -409,7 +414,7 @@ main {
   display: flex;
   padding-bottom: 2em;
 }
-.clinic-description h2, .clinic-description h1 {
+.clinic-description h2, .clinic-description h1{
   padding: 1em 0;
   font-weight: 500;
   display: inline-block;
@@ -426,8 +431,9 @@ main {
   background-color: #1d5d9b;
   left: 0px;
 }
-.clinic-description p {
+.clinic-description p, .clinic-description li{
   line-height: 1.6rem;
+  gap:4rem;
 }
 .clinic-img {
   width: 165em;

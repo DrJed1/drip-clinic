@@ -31,7 +31,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кодування від алкоголізму в Одесі | Umbrella+</title>
+    <title>Кодування від алкоголізму | Umbrella+</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/substyle.css" />
     <!-- link to title -->
@@ -128,12 +128,19 @@
               minlength="13"
               maxlength="13"
             /><button type="submit">Безкоштовна консультація</button>
-            <div id="success">Повідомлення отруєно!</div>
+            <div id="success">Повідомлення відправленно!</div>
           </div>
         </form>
-        <p class="main-cities">
-          Працюємо в Одесі, Києві, Львові, Харкові, Дніпрі, Запоріжжі
-        </p>
+        <div id="cities-placeholder"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch("/page-elements/main-cities-ua.html")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("cities-placeholder").innerHTML = data;
+              });
+          });
+        </script>
       </div>
       <div class="hero-img">
         <img src="/img/hero-coding.webp" alt="codirovanie" />
