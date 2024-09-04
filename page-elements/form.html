@@ -1,0 +1,40 @@
+<form id="tg">
+  <div class="main-consult">
+    <input
+      type="tel"
+      class="form-control"
+      name="user_phone"
+      id="user_phone"
+      placeholder="XXXXXXXX"
+      value="+380"
+      minlength="13"
+      maxlength="13"
+    /><button type="submit">Бесплатная консультация</button>
+    <div id="success">Сообщение отправлено! Перезвоним вам как можно скорее!</div>
+  </div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const CHAT_ID = "-913542926";
+  const URI_API =
+    "https://api.telegram.org/bot6574586981:AAHaBa0jIw2PRv6-EoCnTP0ZyWR6k6wl14Y/sendMessage";
+
+  document.getElementById("tg").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let massage = "<b>Кинули заявку(Главная страница):</b>";
+    massage += document.getElementById("user_phone").value;
+
+    axios
+      .post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: massage,
+      })
+      .then((res) => {
+        this.user_phone.value = "";
+        success.style.display = "block";
+      });
+  });
+</script>
