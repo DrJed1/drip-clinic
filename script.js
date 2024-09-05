@@ -46,7 +46,6 @@ document.getElementById("tg").addEventListener("submit", function (e) {
     document.querySelector("input").style.display = "none";
     document.querySelector(".main-consult button").style.display = "none";
 
-    let massage = "<b>Кинули заявку(Главная страница):</b>";
     massage += document.getElementById("user_phone").value;
 
     axios
