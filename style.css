@@ -315,9 +315,21 @@ main {
   color: white;
   padding: 2em 1em;
 }
+.hero-vid{
+  padding:1em;
+  align-self: center;
+}
 .hero-img {
   padding:1em;
   align-self: center;
+  justify-self:center;
+  height: 400px;
+  width: 400px;
+}
+.hero-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 #youtube-mobile{
   display: none;
@@ -356,15 +368,15 @@ main {
     display: flex;
     justify-content: center;
   }
+  .hero-img img {
+  }
   #youtube-pc{
     display: none;
   }
   #youtube-mobile{
     display: block;
   }
-  /* .hero-img img {
-    border-radius: 5px;
-  } */
+
 }
 
 /* Приемущества */
